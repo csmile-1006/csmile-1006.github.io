@@ -32,4 +32,4 @@ My research goal is to make RL algorithms that can be well adapted to the real w
 
 I am also broadly interested in areas related to RL, including RL leveraging pre‐trained representation learning, language‐conditioned RL, and offline RL.
 
-Prior to this, I completed my B.Sc in Computer Science at KAIST. Prior to my graduate studies, I was a machine learning engineer at <a href="https://kakaocorp.com">Kakao</a>
+Prior to this, I completed my B.Sc in Computer Science at KAIST. Prior to my graduate studies, I was a machine learning engineer at <a href="https://kakaocorp.com">Kakao</a>.
