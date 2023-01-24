@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MS+PhD Student @ <a href='https://alinlab.kaist.ac.kr/'>ALIN Lab</a>, KAIST.
+subtitle: MS+PhD Student @ <a href='https://alinlab.kaist.ac.kr/'>ALIN Lab</a>, <a href="https://kaist.ac.kr">KAIST</a>.
 
 profile:
   align: right
