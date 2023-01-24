@@ -38,15 +38,16 @@
         {%- for author in entry.author_array limit: author_array_limit -%}
           {%- assign author_is_self = false -%}
           {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
-          {%- if site.scholar.last_name contains author_last_name -%}
-            {%- if site.scholar.first_name contains author.first -%}
+          {%- assign author_first_name = author.first | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
+          {%- if site.scholar.first_name contains author_first_name -%}
+            {%- if author.last contains author_last_name -%}
               {%- assign author_is_self = true -%}
             {%- endif -%}
           {%- endif -%}
           {%- assign coauthor_url = nil -%}
-          {%- if site.data.coauthors[author_last_name] -%}
-            {%- for coauthor in site.data.coauthors[author_last_name] -%}
-              {%- if coauthor.firstname contains author.first -%}
+          {%- if site.data.coauthors[author_first_name] -%}
+            {%- for coauthor in site.data.coauthors[author_first_name] -%}
+              {%- if author.last contains author_last_name -%}
                 {%- assign coauthor_url = coauthor.url -%}
                 {%- break -%}
               {%- endif -%}
@@ -58,7 +59,8 @@
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
-            <em>{{author.first}} {{author.last}}</em>
+            <!-- <em>{{author.first}} {{author.last}}</em> -->
+            <strong><span style="color:var(--global-theme-color)">{{author.first}} {{author.last}}</span></strong>
           {%- else -%}
             {%- if coauthor_url -%}
               <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>

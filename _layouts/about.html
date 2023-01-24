@@ -42,15 +42,29 @@ layout: default
 
           <!-- News -->
           {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
+            <br></br>
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
             {%- include news.html %}
           {%- endif %}
 
+          
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
+            <br></br> 
+            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
+
+          <div class="clearfix">
+            <br/>
+            <h2><a style="color: inherit;">Work Experience</a></h2>
+          {%- for w in page.work -%}
+            <b style="font-size:20px">{{w.office}}</b><br/>
+            {{w.comment}}
+            <br/><br/>
+          {%- endfor -%}
+          <br/>
+          </div>
 
           <!-- Social -->
           {%- if page.social %}

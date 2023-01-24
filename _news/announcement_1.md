@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-01-21 11:00:00
 inline: true
 ---
 
-A simple inline announcement.
+<a href="https://openreview.net/forum?id=Peot1SFDX0">Preference Transformer</a> is accepted to ICLR2023 :smile:. Hope to see you in Kigali, Rwanda, in May!
