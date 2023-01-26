@@ -1,8 +1,9 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: 
+subtitle: <b>changyeon.kim [AT] kaist.ac.kr</b>
+# <b>changyeon.kim at kaist dot ac dot kr</b>
 # MS+Ph.D. Student @ <a href='https://alinlab.kaist.ac.kr/'>ALIN Lab</a>, <a href="https://kaist.ac.kr">KAIST</a>.
 
 profile:
