@@ -32,6 +32,6 @@ Hello. I am a MS+Ph.D. student at <a href="https://gsai.kaist.ac.kr/">KAIST GSAI
 
 My research goal is to make RL algorithms that can be well adapted to the real world. To this end, I am focusing on designing RL algorithms to tackle practical and challenging scenarios, e.g., unseen environments, sparse‐rewarded environments, and environments without well‐shaped rewards. 
 
-I am also broadly interested in areas related to RL, including RL leveraging pre‐trained representation learning, language‐conditioned RL, and offline RL.
+I am also broadly interested in RL researches including RL with representation learning, language‐conditioned RL, and offline RL.
 
 Prior to this, I completed my BS in Computer Science at KAIST. Prior to my graduate studies, I was a machine learning engineer at Recommendation Team of <a href="https://kakaocorp.com">Kakao</a>.
