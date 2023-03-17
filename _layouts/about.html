@@ -55,15 +55,26 @@ layout: default
             {%- include selected_papers.html %}
           {%- endif %}
 
+          <!-- Work Experience -->
           <div class="clearfix">
             <br/>
-            <h2><a style="color: inherit;">Work Experiences</a></h2>
+            <h2><a style="color: inherit;">Work Experience</a></h2>
+            <br/>
           {%- for w in page.work -%}
             <b style="font-size:20px">{{w.office}}</b><br/>
             {{w.comment}}
             <br/><br/>
           {%- endfor -%}
-          <br/>
+          </div>
+
+          <div class="clearfix">
+            <br/>
+            <h2><a style="color: inherit;">Honors and Awards</a></h2> 
+            <br/>
+            {%- for w in page.honors -%}
+              <b>{{w.name}}</b>, &nbsp;{{w.comment}}<br/>
+            {%- endfor -%}
+            <br/>
           </div>
 
           <!-- Social -->
