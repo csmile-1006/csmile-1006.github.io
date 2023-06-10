@@ -26,7 +26,7 @@ work:
   - office: Data Science Group, Institute of Basic Science
     comment: Resarch Intern advised by <a href="https://ds.ibs.re.kr/ci/">Prof. Meeyoung Cha</a> (Jul 2019 - Nov 2020) 
 honors:
-  - name: Travel Award
+  - name: Travel Award ($1,000)
     comment: International Conference on Learning Representations (ICLR), 2023
   - name: Dean's List
     comment: KAIST Department of Engineering, 2019
@@ -34,6 +34,10 @@ honors:
     comment: Line Scholarship, 2019
   - name: Recipient ($3,000)
     comment: Kwanjeong Scholarship, 2017
+
+academic_services:
+  - name: Workshop Reviewer
+    venue: Frontiers4LCD@ICML'23
 
 ---
 

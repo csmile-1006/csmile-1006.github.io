@@ -67,12 +67,24 @@ layout: default
           {%- endfor -%}
           </div>
 
+          <!-- Honors and Rewards -->
           <div class="clearfix">
             <br/>
             <h2><a style="color: inherit;">Honors and Awards</a></h2> 
-            <br/>
+            <!-- <br/> -->
             {%- for w in page.honors -%}
               <b>{{w.name}}</b>, &nbsp;{{w.comment}}<br/>
+            {%- endfor -%}
+            <br/>
+          </div>
+
+          <!-- Academic Services -->
+          <div class="clearfix">
+            <br/>
+            <h2><a style="color: inherit;">Academic Services</a></h2> 
+            <!-- <br/> -->
+            {%- for w in page.academic_services -%}
+              <b>{{w.name}}</b>: &nbsp;{{w.venue}}<br/>
             {%- endfor -%}
             <br/>
           </div>
