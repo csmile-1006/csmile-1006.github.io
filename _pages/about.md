@@ -32,6 +32,8 @@ honors:
     comment: KAIST Department of Engineering, 2019
   - name: Recipient ($5,000)
     comment: Line Scholarship, 2019
+  - name: Recipient
+    comment: National Science and Engineering Scholarship, Korea Ministry of Science and ICT, 2017 - 2019
   - name: Recipient ($3,000)
     comment: Kwanjeong Scholarship, 2017
 
