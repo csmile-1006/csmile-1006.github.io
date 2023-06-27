@@ -43,10 +43,10 @@ academic_services:
 
 ---
 
-Hello. I am a MS+Ph.D. student at <a href="https://gsai.kaist.ac.kr/">KAIST GSAI</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Prof. Jinwoo Shin</a>. Currently, I am working closely with <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a> at Google Research and <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at University of Michigan.
+Hello. I am a MS+PhD student at <a href="https://gsai.kaist.ac.kr/">KAIST GSAI</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Prof. Jinwoo Shin</a>. Currently, I am working closely with <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a> at Google Research and <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at University of Michigan.
 
 My research goal is to make RL algorithms that can be well adapted to the real world. To this end, I am focusing on designing RL algorithms to tackle practical and challenging scenarios, e.g., unseen environments, sparse‐rewarded environments, and environments without well‐shaped rewards. 
 
 I am also broadly interested in RL researches including RL with representation learning, language‐conditioned RL, and offline RL.
 
-Prior to this, I completed my BS in Computer Science at KAIST. Prior to my graduate studies, I was a machine learning engineer at Recommendation Team of <a href="https://kakaocorp.com">Kakao</a>.
+Prior to my graduate studies, I was a machine learning engineer at Recommendation Team of <a href="https://kakaocorp.com">Kakao</a>. Before that, I completed my BS in Computer Science at KAIST. 
