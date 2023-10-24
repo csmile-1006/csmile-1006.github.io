@@ -26,6 +26,8 @@ work:
   - office: Data Science Group, Institute of Basic Science
     comment: Resarch Intern advised by <a href="https://ds.ibs.re.kr/ci/">Prof. Meeyoung Cha</a> (Jul 2019 - Nov 2020) 
 honors:
+  - name: Recipient ($3,000)
+    comment: Google Student Travel Grant, 2023
   - name: Travel Award ($1,000)
     comment: International Conference on Learning Representations (ICLR), 2023
   - name: Dean's List
