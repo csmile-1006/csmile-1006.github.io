@@ -29,7 +29,9 @@ honors:
   - name: Travel Award ($2,000)
     comment: Conference on Neural Information Processing Systems (NeurIPS), 2023
   - name: Recipient ($3,000)
-    comment: Google Student Travel Grant, 2023
+    comment: KAIST-Google Partnership Program, 2023
+  - name: Recipient ($2,000)
+    comment: Google East Asia Student Travel Grant, 2023
   - name: Travel Award ($1,000)
     comment: International Conference on Learning Representations (ICLR), 2023
   - name: Dean's List
