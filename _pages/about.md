@@ -43,6 +43,10 @@ honors:
   - name: Recipient ($3,000)
     comment: Kwanjeong Scholarship, 2017
 
+invited_talks:
+  - name: Guide Your Agent with Adaptive Multimodal Rewards
+    venue: LG AI Research (New Orleans, LA, USA)
+
 academic_services:
   - name: Workshop Reviewer
     venue: Frontiers4LCD@ICML'23
