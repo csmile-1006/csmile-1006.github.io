@@ -516,6 +516,8 @@ footer.sticky-bottom {
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
+          padding-left: 0.75rem;
+          padding-right: 0.75rem;
         }
       }
       .title {
@@ -569,6 +571,10 @@ footer.sticky-bottom {
           }
         }
       }
+      .honor {
+        color: var(--global-theme-color);      
+        font-weight: bolder;
+      }      
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;
