@@ -53,7 +53,7 @@ academic_services:
 
 ---
 
-Hello. I am a PhD student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a> and <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>. Currently, I am working closely with <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at University of Michigan.
+Hello. I am a PhD student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a> and <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>. Currently, I am working closely with <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at University of Michigan and <a href="https://clvrai.com/web_lim/">Joseph J. Lim<a/> at KAIST.
 
 My research interest lies on applying RL algorithms to challenging tasks where reward specification is burdensome. To this end, I am focusing on designing RL algorithms to tackle practical and challenging scenarios like unseen novel environments and environments without well-shaped rewards. 
 I am also broadly interested in RL researches including RL with representation learning, language‐conditioned RL, and offline RL.
