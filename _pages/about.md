@@ -48,6 +48,8 @@ invited_talks:
     venue: LG AI Research (New Orleans, LA, USA)
 
 academic_services:
+  - name: Conference Reviewer
+    venue: ICML (2024), NeurIPS (2024)
   - name: Workshop Reviewer
     venue: Frontiers4LCD@ICML'23
 
