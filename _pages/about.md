@@ -8,7 +8,7 @@ subtitle: <b>changyeon.kim [AT] kaist.ac.kr</b>
 
 profile:
   align: right
-  image:
+  image: changyeon.jpg
   image_circular: false # crops the image to make it circular
   # address: >
   #   <p>555 your office number</p>
