@@ -26,6 +26,8 @@ work:
   - office: Data Science Group, Institute of Basic Science
     comment: Resarch Intern advised by <a href="https://ds.ibs.re.kr/ci/">Prof. Meeyoung Cha</a> (Jul 2019 - Nov 2020) 
 honors:
+  - name: Finalist
+    comment: Qualcomm Innovation Fellowship 2024 Korea
   - name: Travel Award ($2,000)
     comment: Conference on Neural Information Processing Systems (NeurIPS), 2023
   - name: Recipient ($3,000)
@@ -55,9 +57,8 @@ academic_services:
 
 ---
 
-Hello. I am a PhD student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a> and <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>, and a visiting PhD student at <a href="https://www.cs.utexas.edu/">UT Austin</a> advised by <a href="https://yukezhu.me/">Yuke Zhu</a>. I also worked closely with <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at University of Michigan and <a href="https://clvrai.com/web_lim/">Joseph J. Lim<a/> at KAIST.
+Hello. I am a PhD student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a> and <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>, and a visiting PhD student at <a href="https://www.cs.utexas.edu/">UT Austin</a> advised by <a href="https://yukezhu.me/">Yuke Zhu</a>. I also worked closely with <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at UMich and <a href="https://clvrai.com/web_lim/">Joseph J. Lim<a/> at KAIST.
 
-My research interest lies on applying RL algorithms to challenging tasks where reward specification is burdensome. To this end, I am focusing on designing RL algorithms to tackle practical and challenging scenarios like environments without well-shaped rewards and unseen novel environments. 
-I am also broadly interested in RL researches including RL with representation learning, language‐conditioned RL, and offline RL.
+My research centers on <b>training artificial agents to align with human intents, even when explicit reward signals are limited or unavailable.</b> I focus on developing algorithms that derive suitable reward functions from real human preferences or foundational vision-language models, which encapsulate extensive human knowledge. Beyond this primary theme, I also explore broader decision-making challenges, including (M)LLM-based agents, offline reinforcement learning, and generalization of RL solutions across diverse environments.
 
 Prior to my graduate studies, I was a machine learning engineer at Recommendation Team of <a href="https://kakaocorp.com">Kakao</a>. Before that, I completed my BS in Computer Science at KAIST. 
