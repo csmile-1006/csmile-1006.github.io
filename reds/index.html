@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Subtask-Aware Visual Reward Learning from Segmented Demonstrations">
+  <meta name="keywords" content="REDS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Subtask-Aware Visual Reward Learning from Segmented Demonstrations</title>
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> -->
+
+  <link href="https://fonts.googleapis.com/css2?family=FontAwesome" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script> -->
+
+  <!-- <script src="./static/js/index.js"></script> -->
+</head>
+
+<body>
+
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Subtask-Aware Visual Reward Learning from Segmented Demonstrations
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a target="_blank" rel="noopener" href="https://csmile-1006.github.io/">Changyeon Kim</a><sup>1</sup> </span>
+                  &nbsp;&nbsp;
+              <span class="author-block">
+                <a target="_blank" rel="noopener" href="https://minoring.github.io/">Minho Heo</a><sup>1</sup></span>
+                &nbsp;&nbsp;
+              <span class="author-block">
+                <a target="_blank" rel="noopener" href="https://dhleekr.github.io/">Doohyun Lee</a><sup>1</sup></span>
+                &nbsp;&nbsp;
+                <br/>
+               <span class="author-block">
+                <a target="_blank" rel="noopener" href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a><sup>2,3</sup></span>
+                &nbsp;&nbsp;
+               <span class="author-block">
+                <a target="_blank" rel="noopener" href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a><sup>1</sup></span>
+                &nbsp;&nbsp;
+               <span class="author-block">
+                <a target="_blank" rel="noopener" href="https://clvrai.com/web_lim/">Joseph J. Lim</a><sup>1,^</sup></span>
+                &nbsp;&nbsp;
+               <span class="author-block">
+                <a target="_blank" rel="noopener" href="https://sites.google.com/view/kiminlee">Kimin Lee</a><sup>1,^</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup> KAIST</span>
+              &nbsp;&nbsp;
+              <span class="author-block"><sup>2</sup> University of Michigan</span>
+              &nbsp;&nbsp;
+              <span class="author-block"><sup>3</sup> LG AI Research</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">(^: Equal Advising)</span>
+            </div>
+
+            <div class="clear-float">
+              <div class="paper-btn-parent">
+                  <a class="paper-btn" href="https://openreview.net/pdf?id=mqKVe6F3Up">
+                      <span class="fas fa-file-alt"></span> 
+                      Paper
+                  </a>   
+                  <a class="github-btn" href="https://csmile-1006.github.io/REDS/">
+                      <span class="fab fa-github"></span> 
+                      Code (Coming Soon)
+                  </a>           
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section>
+      <h3 class="title is-3">Overview</h3>
+      <!-- <hr> -->
+        <div class="is-light">
+            <div class="content has-text-justified">
+            <p class="is-size-5">We propose <b><font color="#BD3039">REDS: <em>REward learning from Demonstration with Segmentations</em></font></b>, a new reward learning framework that leverages action-free videos with minimal supervision by treating segmented video demonstrations as ground-truth rewards.</p>
+            </div>
+        </div>  
+        <br/>
+
+        <video width="100%" controls autoplay muted loop>
+          <source src="./static/videos/REDS_overview.mp4" type="video/mp4">
+        </video>
+        <br/>
+        <p>
+          Our main idea is to <b>leverage expert demonstrations annotated with the ongoing subtask as the source of implicit reward signals </b>. We train a reward model conditioned on video segments and corresponding subtasks with 1) contrastive loss to attract the video segments and corresponding subtask embeddings and 2) <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2006.13900">EPIC</a> loss to generate reward equivalent to subtask segmentations. In online RL, REDS infers the ongoing subtask using only video segments at each timestep and computes the reward with that.
+        </p>
+    </section>
+
+
+
+    <!-- <section class="section">
+      <div class="container is-max-desktop"> -->
+
+        <!-- Method. -->
+
+    <!-- <section>
+      <h2 class="title is-3">Abstract</h2>
+        <p>
+          Reinforcement Learning (RL) agents have demonstrated their potential across various robotic tasks. However, they still heavily rely on human-engineered reward functions, requiring extensive trial-and-error and access to target behavior information, often unavailable in real-world settings. This paper introduces <b>REDS: <em>REward learning from Demonstration with Segmentations</em></b>, a novel reward learning framework that leverages action-free videos with minimal supervision. Specifically, REDS employs video demonstrations segmented into subtasks from diverse sources and treats these segments as ground-truth rewards. We train a dense reward function conditioned on video segments and their corresponding subtasks to ensure alignment with ground-truth reward signals by minimizing the Equivalent-Policy Invariant Comparison distance. Additionally, we employ contrastive learning objectives to align video representations with subtasks, ensuring precise subtask inference during online interactions. Our experiments show that REDS significantly outperforms baseline methods on complex robotic manipulation tasks in Meta-World and more challenging real-world tasks, such as furniture assembly in FurnitureBench, with minimal human intervention. Moreover, REDS facilitates generalization to unseen tasks and robot embodiments, highlighting its potential for scalable deployment in diverse environments.
+        </p>
+    </section> -->
+
+        <!--/ Method. -->
+        <!-- Results. -->
+
+        <section>
+            <h3 class="title is-3">Experiments</h3>
+
+            <!-- Setup: Tasks. -->
+            <h4 class="title is-4">Experimental Setup: Tasks</h4>
+            <div style="text-align: center;">
+                <img src="./static/images/tasks.png" alt="Experimental tasks overview" />
+            </div>
+            <div class="content has-text-justified">
+              <p>
+                We study REDS in various robotic manipulation tasks from <a href="https://meta-world.github.io/"></a>Meta-world</a> in simulation and robotic furniture assembly tasks from <a href="https://clvrai.github.io/furniture-bench/">FurnitureBench</a> in the real-world.
+              </p>
+            </div>
+            <br/>
+
+            <!-- Results. -->
+            <h4 class="title is-4">Experimental Results: Meta-World</h4>
+            <img src="./static/images/metaworld.png" alt="Experimental results on Meta-World"/>
+            <div class="content has-text-justified">
+              <p>
+                REDS consistently outperforms various prior reward learning methods in Meta-World, and even surpasses the performance of human-engineered reward functions in several tasks.
+              </p>
+            </div>
+            <br/>
+
+            <h4 class="title is-4">Experimental Results: FurnitureBench</h4>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div style="width: 40%;">
+                <img src="./static/images/furniturebench.png" alt="Experimental results on FurnitureBench" style="width: 100%; margin-bottom: 10px;"/>
+                <img src="./static/images/fb_example.png" alt="Additional FurnitureBench results" style="width: 100%;"/>
+              </div>
+              <img src="./static/images/fb_reds_graph.png" alt="Qualitative results on FurnitureBench" style="width: 60%;"/>
+            </div>
+            <br/>
+            <div class="content has-text-justified">
+              <p>
+                REDS demonstrates superior performance in real-world furniture assembly tasks through online fine-tuning, achieving a score of 2.45 with just 300 demonstrations compared to baseline IQL's 1.8 with 500 demonstrations. 
+                This strong performance, combined with minimal human intervention requirements, showcases REDS as a promising approach for scaling reinforcement learning to diverse real-world robotics applications.
+              </p>
+            </div>
+            <br/>
+
+            <h4 class="title is-4">Experimental Results: Generalization to Unseen Embodiments</h4>
+            <div style="text-align: center;">
+                <img src="./static/images/unseen_emb.png" alt="Generalization to unseen embodiments" />
+            </div>
+            <div class="content has-text-justified">
+              <p>
+                We also show that REDS can generalize to unseen robot embodiments, showcasing its potential for real-world deployment.
+              </p>
+            </div>
+            
+        </section>
+
+</body>
+<section id="bibtex">
+        <h3 class="title is-3">Citation</h3>
+        <hr>
+        <pre><code>@inproceedings{kim2025reds,
+    title={Subtask-Aware Visual Reward Learning from Segmented Demonstrations},
+    author={Changyeon Kim and Minho Heo and Doohyun Lee and Honglak Lee and Jinwoo Shin and Joseph J. Lim and Kimin Lee},
+    year={2025},
+    booktitle={International Conference on Learning Representations},
+}</code></pre>
+    </section>
+
+</html>
