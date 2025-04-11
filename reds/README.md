@@ -1,4 +1,4 @@
-# Continuous Control with Coarse-to-fine Reinforcement Learning
+# Subtask-Aware Visual Reward Learning from Segmented Demonstrations
 
 # Website License
 Templated borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>  
