@@ -26,6 +26,8 @@ work:
   - office: Data Science Group, Institute of Basic Science
     comment: Resarch Intern advised by <a href="https://ds.ibs.re.kr/ci/">Prof. Meeyoung Cha</a> (Jul 2019 - Nov 2020) 
 honors:
+  - name: Notable Reviewer
+    comment: International Conference on Learning Representations (ICLR), 2025
   - name: Finalist
     comment: Qualcomm Innovation Fellowship 2024 Korea
   - name: Travel Award ($2,000)
