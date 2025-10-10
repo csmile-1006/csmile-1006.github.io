@@ -53,13 +53,13 @@ invited_talks:
 
 academic_services:
   - name: Conference Reviewer
-    venue: ICLR (2025), ICML (2024, 2025), NeurIPS (2024, 2025)
+    venue: ICLR (2025, 2026), ICML (2024, 2025), NeurIPS (2024, 2025), AAAI (2026)
   - name: Workshop Reviewer
-    venue: Frontiers4LCD@ICML'23
+    venue: Frontiers4LCD@ICML'23, MRM-D@CoRL'24
 
 ---
 
-Hello. I am a PhD student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a> and <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>, and a visiting PhD student at <a href="https://www.cs.utexas.edu/">UT Austin</a> advised by <a href="https://yukezhu.me/">Yuke Zhu</a>. I also worked closely with <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at UMich and <a href="https://clvrai.com/web_lim/">Joseph J. Lim<a/> at KAIST.
+Hello. I am a Ph.D. student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, advised by <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a> and <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a>. During my Ph.D., I was a visiting scholar at <a href="https://www.cs.utexas.edu/">UT Austin</a> advised by <a href="https://yukezhu.me/">Yuke Zhu</a>, and also worked closely with <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at UMich and <a href="https://clvrai.com/web_lim/">Joseph J. Lim<a/> at KAIST.
 
 <!-- My research centers on <b>training artificial agents to align with human intents, even when explicit reward signals are limited or unavailable.</b> I focus on developing algorithms that derive suitable reward functions from real human preferences or foundational vision-language models, which encapsulate extensive human knowledge. Beyond this primary theme, I also explore broader decision-making challenges, including (M)LLM-based agents, offline reinforcement learning, and generalization of RL solutions across diverse environments. -->
 
