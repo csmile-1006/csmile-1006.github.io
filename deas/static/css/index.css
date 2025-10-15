@@ -202,6 +202,11 @@ figure {
     transform: translateY(-2px);
 }
 
+.hf-btn:hover {
+    color: #FF8563;
+    transform: translateY(-2px);
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
