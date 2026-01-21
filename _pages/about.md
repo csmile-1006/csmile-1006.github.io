@@ -21,6 +21,8 @@ social: true  # includes social icons at the bottom of the page
 work:
   # - office: Google Research
   #   comment: External Collaboration with <a href="https://sites.google.com/view/kiminlee">Dr. Kimin Lee</a> (Mar 2022 - Jul 2023)
+  - office: NVIDIA Seattle Robotics Lab
+    comment: Research Intern (May 2026 ~ Jul 2026) (Expected)
   - office: Recommendation Team, Kakao
     comment: Machine Learning Engineer (Dec 2020 ~ Feb 2022)
   - office: Data Science Group, Institute of Basic Science
