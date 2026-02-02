@@ -68,3 +68,11 @@ Hello. I am a Ph.D. student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, ad
 My research focuses on <b>training artificial robotic agents to align with human intentions.</b> To this end, my research recently focused on reinforcement learning (RL) applicable to large-scale, pre-trained robotic foundation models for training human-aligned behaviors on new tasks through online experiences. Additionally, to accurately convey human intents, I focused on developing reward learning algorithms that generate appropriate reward signals based on real human preferences or foundational vision-language models, effectively incorporating extensive human knowledge. 
 
 Prior to my graduate studies, I was a machine learning engineer at Recommendation Team of <a href="https://kakaocorp.com">Kakao</a>. Before that, I completed my BS in Computer Science at KAIST. 
+
+<!-- <div style="background-color: #ffd700; color: #222; padding: 18px; border-radius: 8px; border: 2px solid #ffa500; margin: 20px 0; font-size: 1.25em; text-align: center;"> -->
+  <b>🚀 <u>Actively Seeking Industry Research Positions for 2026!</u> 🚀<br>
+  I expect to graduate in 2026 and am highly interested in industry research opportunities.<br>
+  <span style="color:#d35400;"><b>Let’s connect about collaborations or exciting openings!</b></span>
+  <br>
+  <span style="font-size:1.1em;">Please <a href="mailto:cykim1006@gmail.com"><b>contact me</b></a> if you’d like to discuss potential work together.</span>
+<!-- </div> -->
