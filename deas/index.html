@@ -37,7 +37,7 @@
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a target="_blank" rel="noopener" href="https://csmile-1006.github.io/">Changyeon Kim*</a><sup>1</sup> </span>
+                <a target="_blank" rel="noopener" href="https://csmile-1006.github.io/">Changyeon Kim</a><sup>1</sup> </span>
                   &nbsp;&nbsp;
               <span class="author-block">
                 <a target="_blank" rel="noopener" href="https://csmile-1006.github.io">Haeone Lee</a><sup>1</sup></span>
@@ -46,10 +46,10 @@
                 <a target="_blank" rel="noopener" href="https://younggyo.me">Younggyo Seo</a><sup>2</sup></span>
                 &nbsp;&nbsp;
                <span class="author-block">
-                <a target="_blank" rel="noopener" href="https://sites.google.com/view/kiminlee">Kimin Lee</a><sup>1</sup></span>
+                <a target="_blank" rel="noopener" href="https://sites.google.com/view/kiminlee">Kimin Lee</a><sup>^1</sup></span>
                 &nbsp;&nbsp;
                <span class="author-block">
-                <a target="_blank" rel="noopener" href="https://yukezhu.me">Yuke Zhu</a><sup>3,4</sup></span>
+                <a target="_blank" rel="noopener" href="https://yukezhu.me">Yuke Zhu</a><sup>^3,4</sup></span>
                 &nbsp;&nbsp;
             </div>
 
@@ -61,7 +61,11 @@
               <span class="author-block"><sup>3</sup> The University of Texas at Austin</span>
               &nbsp;&nbsp;
               <span class="author-block"><sup>4</sup> NVIDIA</span>
- 
+
+            </div>
+
+            <div class="is-size-4 publication-authors" style="margin-top: 12px;">
+              <span style="color: #008348; font-weight: bold;">ICLR 2026</span>
             </div>
 
             <div class="clear-float">
@@ -79,9 +83,9 @@
                       Dataset (RoboCasa)
                   </a>           
                   <a class="github-btn" href="https://github.com/csmile-1006/DEAS-FQL">
-                      <span class="fab fa-github-square"></span> 
+                      <span class="fab fa-github-square"></span>
                       Code (OGBench)
-                  </a>           
+                  </a>
             </div>
           </div>
 
@@ -90,24 +94,79 @@
       </div>
     </div>
 
+    <section>
+      <div class="container is-max-desktop">
+        <div style="background-color: #f0f9f4; border-left: 4px solid #008348; padding: 16px 20px; margin: 20px 0; border-radius: 4px;">
+          <p style="margin: 0; font-size: 16px; color: #333;">
+            <strong style="color: #008348;">📣 Changyeon Kim is actively on the job market!</strong>
+            If you're interested in my work or would like to chat about research, feel free to reach out at
+            <a href="mailto:cykim1006@gmail.com" style="color: #008348; font-weight: bold;">cykim1006@gmail.com</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container is-max-desktop">
+        <h3 class="title is-3">TL;DR &amp; Key Insights</h3>
+        <div style="background-color: #fafafa; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px 24px; margin-bottom: 16px;">
+          <p class="is-size-5" style="margin-bottom: 14px;">
+            <strong><font color="#008348">DEAS</font></strong> is a simple yet effective offline RL framework that learns a critic over <strong>H-step action sequences</strong> with <strong>detached value learning</strong>, enabling <strong>stable, plug-and-play RL enhancement of VLA models.</strong>
+          </p>
+          <ul style="margin-left: 20px; font-size: 16px; line-height: 1.7;">
+            <!-- <li>
+              <strong style="color: #008348;">Action sequences as decision units.</strong>
+              Treating H-step sequences as single decisions reduces the effective planning horizon, providing n-step-TD-like stability <em>without</em> requiring explicit goal conditioning.
+            </li> -->
+            <li>
+              <strong style="color: #008348;">Detached value learning.</strong>
+              Decouple the critic from the actor to avoid value overestimation over expanded action spaces.
+            </li>
+            <li>
+              <strong style="color: #008348;">Distributional RL + dual discount factors.</strong>
+              Categorical values with separate intra- / inter-sequence discounts γ<sub>1</sub>, γ<sub>2</sub><sup>H</sup> stabilize multi-step returns.
+            </li>
+            <li>
+              <strong style="color: #008348;">Plug-and-play with any policy, including large VLAs.</strong>
+              Boosts GR00T N1.5 / pi_0 on RoboCasa Kitchen and real-world Franka manipulation without architectural changes.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
 
     <section>
       <h3 class="title is-3">Overview</h3>
       <!-- <hr> -->
-        <div class="is-light">
+        <!-- <div class="is-light">
             <div class="content has-text-justified">
             <p class="is-size-5">We present <strong><font color="#008348">DEAS</font></strong>, an offline RL framework that learns from <strong>action sequences</strong> instead of single actions. Unlike previous methods that couple actor-critic training, our key insight is to <strong>train the action-sequence critic separately from the policy through detached value learning</strong>, which enables stable learning while avoiding value overestimation. We further enhance stability by combining distributional RL with detached value learning and using dual discount factors. DEAS can be directly used to enhance VLA performance in both real-world robotic manipulation and simulated environments.</p>
             </div>
-        </div>  
+        </div>
+        <br/> -->
+
+        <h4 class="title is-4">Previous Methods: Value Overestimation over Expanded Action Spaces</h4>
+        <div class="content has-text-justified">
+          <p>
+            Prior actor-critic methods that adopt action sequences let the policy π propose a full H-step sequence <em>â<sub>H:2H−1</sub></em>. Because this expanded action space is far larger than what the offline dataset supports, <b>the target critic <em>Q̄</em> is queried on out-of-distribution sequences, and the actor is free to exploit the resulting critic errors</b> — causing <strong>severe value overestimation</strong> and unstable training in offline settings.
+          </p>
+        </div>
+        <div style="text-align: center;">
+            <img src="./static/images/previous_problem.png" alt="Illustration of value overestimation in previous action-sequence actor-critic methods" style="max-width: 90%; height: auto;"/>
+        </div>
         <br/>
 
+        <h4 class="title is-4">DEAS: Detached Value Learning with Action Sequences</h4>
+        <div class="content has-text-justified">
+          <p>
+            DEAS removes the actor from the critic update loop entirely. A value network <em>V(s)</em> and action-sequence critic <em>Q(s, a<sub>0:H−1</sub>)</em> are trained with <strong>IQL-style expectile regression</strong> (the τ·-weighted target), biasing value estimates toward high-return, <em>in-distribution</em> action sequences. We further combine this with <strong>distributional RL</strong> — categorical distributions over a fixed value support — and <strong>dual discount factors</strong> γ<sub>1</sub>, γ<sub>2</sub> that separately control reward aggregation <em>within</em> a sequence and bootstrapping <em>across</em> sequence-level decision points. The policy is then extracted with any off-the-shelf method (BoN, DPG, AWR, etc.), which makes DEAS directly applicable to expressive policies including large-scale VLAs.
+          </p>
+        </div>
         <div style="text-align: center;">
             <img src="./static/images/deas_only_overview.png" alt="Overview of DEAS" style="max-width: 100%; height: auto;"/>
         </div>
-
-        <!-- <video width="100%" controls autoplay muted loop>
-          <source src="./static/videos/REDS_overview.mp4" type="video/mp4">
-        </video> -->
         <br/>
     </section>
 
