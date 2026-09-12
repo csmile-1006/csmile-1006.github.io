@@ -19,15 +19,17 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 work:
-  # - office: Google Research
-  #   comment: External Collaboration with <a href="https://sites.google.com/view/kiminlee">Dr. Kimin Lee</a> (Mar 2022 - Jul 2023)
   - office: NVIDIA Seattle Robotics Lab
     comment: Research Intern (May 2026 ~ Jul 2026) (Expected)
+  - office: The University of Texas at Austin
+    comment: Visiting scholar working with <a href="https://yukezhu.me">Prof. Yuke Zhu</a> (July 2024 - Jun 2025)
   - office: Recommendation Team, Kakao
     comment: Machine Learning Engineer (Dec 2020 ~ Feb 2022)
   - office: Data Science Group, Institute of Basic Science
     comment: Resarch Intern advised by <a href="https://ds.ibs.re.kr/ci/">Prof. Meeyoung Cha</a> (Jul 2019 - Nov 2020) 
 honors:
+  - name: Silver Reviwer Award
+    comment: International Conference on Machine Learning (ICML), 2026
   - name: Notable Reviewer
     comment: International Conference on Learning Representations (ICLR), 2025
   - name: Finalist
@@ -55,26 +57,18 @@ invited_talks:
 
 academic_services:
   - name: Conference Reviewer
-    venue: ICLR (2025, 2026), ICML (2024, 2025, 2026), NeurIPS (2024, 2025), AAAI (2026), RSS (2026)
+    venue: ICLR, ICML, NeurIPS, CoRL, AAAI, RSS, ECCV, RA-L
   - name: Workshop Reviewer
-    venue: Frontiers4LCD@ICML'23, MRM-D@CoRL'24
+    venue: Frontiers4LCD@ICML'23, MRM-D@CoRL'24, WRM@NeurIPS'26
 
 ---
 
-Hello. I am a Ph.D. student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, advised by <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a> and <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a>, and a research scientist intern at <a href="https://research.nvidia.com/labs/srl/">NVIDIA Seattle Robotics Lab</a> working with <a href="https://scholar.google.com/citations?user=ONuIPv0AAAAJ&hl=en">Yijie Guo</a> and <a href="https://research.nvidia.com/person/yashraj-narang">Yashraj Narang</a>. During my Ph.D., I was a visiting scholar at <a href="https://www.cs.utexas.edu/">UT Austin</a> advised by <a href="https://yukezhu.me/">Yuke Zhu</a>, and also worked closely with <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at UMich and <a href="https://clvrai.com/web_lim/">Joseph J. Lim<a/> at KAIST.
+Hello. I am a Ph.D. student at <a href="https://gsai.kaist.ac.kr/">KAIST</a>, advised by <a href="https://sites.google.com/view/kiminlee">Kimin Lee</a> and <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a>, and a research scientist intern at <a href="https://research.nvidia.com/labs/srl/">NVIDIA Seattle Robotics Lab</a> working with <a href="https://scholar.google.com/citations?user=ONuIPv0AAAAJ&hl=en">Yijie Guo</a> and <a href="https://research.nvidia.com/person/yashraj-narang">Yashraj Narang</a>. During my Ph.D., I was a visiting scholar at <a href="https://www.cs.utexas.edu/">UT Austin</a> advised by <a href="https://yukezhu.me/">Yuke Zhu</a>
+<!-- , and also worked closely with <a href="https://web.eecs.umich.edu/~honglak/">Honglak Lee</a> at UMich and <a href="https://clvrai.com/web_lim/">Joseph J. Lim<a/> at KAIST. -->
 
-<!-- My research centers on <b>training artificial agents to align with human intents, even when explicit reward signals are limited or unavailable.</b> I focus on developing algorithms that derive suitable reward functions from real human preferences or foundational vision-language models, which encapsulate extensive human knowledge. Beyond this primary theme, I also explore broader decision-making challenges, including (M)LLM-based agents, offline reinforcement learning, and generalization of RL solutions across diverse environments. -->
+My research aims to enable robotic agents to continually improve through real-world deployment with reduced human effort. To this end, I develop scalable and reliable methods across the real-world robot post-training pipeline, including offline reinforcement learning (RL) for large vision-language-action (VLA) policies dealing with long action chunks, rollout-free validation for reliable checkpoint selection during training, and lifelong adaptation that improves learning efficiency while mitigating catastrophic forgetting. Previously, my work focused on scalable reward learning methods that capture human intent by leveraging human feedback and vision-language foundation models.
 
-<!-- My research focuses on <b>training artificial robotic agents to align with human intentions.</b> To this end, my research recently focused on reinforcement learning (RL) applicable to large-scale, pre-trained robotic foundation models for training human-aligned behaviors on new tasks through online experiences. Additionally, to accurately convey human intents, I focused on developing reward learning algorithms that generate appropriate reward signals based on real human preferences or foundational vision-language models, effectively incorporating extensive human knowledge.  -->
-
-My research centers on <b>training intelligent robotic agents that are continuously improved in real-world deployments.</b> To achieve this, I leverage Reinforcement Learning (RL) to develop robotic agents that learn new behaviors from online experiences. A key focus of my work has been advancing RL methods to support the training of complex, long-horizon behaviors and designing reward learning algorithms that accurately capture human intent, either through direct human feedback or by grounding in vision-language foundation models.
+<!-- My research centers on <b>training intelligent robotic agents that are continuously improved in real-world deployments.</b> To achieve this, I leverage Reinforcement Learning (RL) to develop robotic agents that learn new behaviors from online experiences. A key focus of my work has been advancing RL methods to support the training of complex, long-horizon behaviors and designing reward learning algorithms that accurately capture human intent, either through direct human feedback or by grounding in vision-language foundation models. -->
 
 Prior to my graduate studies, I was a machine learning engineer at Recommendation Team of <a href="https://kakaocorp.com">Kakao</a>. Before that, I completed my BS in Computer Science at KAIST. 
 
-<!-- <div style="background-color: #ffd700; color: #222; padding: 18px; border-radius: 8px; border: 2px solid #ffa500; margin: 20px 0; font-size: 1.25em; text-align: center;"> -->
-  <!-- <b>🚀 <u>Actively Seeking Industry Research Positions for 2026!</u> 🚀<br>
-  I expect to graduate in 2026 and am highly interested in industry research opportunities.<br>
-  <span style="color:#d35400;"><b>Let’s connect about collaborations or exciting openings!</b></span>
-  <br>
-  <span style="font-size:1.1em;">Please <a href="mailto:cykim1006@gmail.com"><b>contact me</b></a> if you’d like to discuss potential work together.</span> -->
-<!-- </div> -->
