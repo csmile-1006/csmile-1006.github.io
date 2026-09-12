@@ -72,9 +72,9 @@ My research centers on <b>training intelligent robotic agents that are continuou
 Prior to my graduate studies, I was a machine learning engineer at Recommendation Team of <a href="https://kakaocorp.com">Kakao</a>. Before that, I completed my BS in Computer Science at KAIST. 
 
 <!-- <div style="background-color: #ffd700; color: #222; padding: 18px; border-radius: 8px; border: 2px solid #ffa500; margin: 20px 0; font-size: 1.25em; text-align: center;"> -->
-  <b>🚀 <u>Actively Seeking Industry Research Positions for 2026!</u> 🚀<br>
+  <!-- <b>🚀 <u>Actively Seeking Industry Research Positions for 2026!</u> 🚀<br>
   I expect to graduate in 2026 and am highly interested in industry research opportunities.<br>
   <span style="color:#d35400;"><b>Let’s connect about collaborations or exciting openings!</b></span>
   <br>
-  <span style="font-size:1.1em;">Please <a href="mailto:cykim1006@gmail.com"><b>contact me</b></a> if you’d like to discuss potential work together.</span>
+  <span style="font-size:1.1em;">Please <a href="mailto:cykim1006@gmail.com"><b>contact me</b></a> if you’d like to discuss potential work together.</span> -->
 <!-- </div> -->
