@@ -75,10 +75,21 @@ strong { font-weight: 600; }
   gap: 6px 18px;
 }
 .profile-links {
+  gap: 8px;
   margin-top: 24px;
   padding-top: 16px;
   border-top: 1px solid #e7e7e7;
 }
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 5px;
+}
+.profile-links a:hover { background: var(--accent-soft); text-decoration: none; }
+.profile-links svg { display: block; width: 21px; height: 21px; }
 .contact { font-size: 0.93rem; margin: 12px 0 0; }
 
 .home-section { margin-top: 48px; }
