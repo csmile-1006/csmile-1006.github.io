@@ -90,7 +90,6 @@ strong { font-weight: 600; }
 }
 .profile-links a:hover { background: var(--accent-soft); text-decoration: none; }
 .profile-links svg { display: block; width: 21px; height: 21px; }
-.contact { font-size: 0.93rem; margin: 12px 0 0; }
 
 .home-section { margin-top: 48px; }
 .news-list, .experience-list, .compact-list, .publications {
