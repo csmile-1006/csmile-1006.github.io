@@ -12,3 +12,4 @@ a:focus-visible {
   outline-offset: 4px;
 }
 .highlight { color: var(--accent); }
+::selection { background: #efd6dc; color: #45141e; }
