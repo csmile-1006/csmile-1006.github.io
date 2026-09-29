@@ -1,0 +1,14 @@
+:root {
+  --accent: #c41230; /* Carnegie Mellon red */
+  --accent-hover: #9b0e26;
+  --accent-soft: #fff3f5;
+  --accent-border: #e9b8c2;
+}
+
+a, a:link, a:visited { color: var(--accent); }
+a:hover { color: var(--accent-hover); }
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.highlight { color: var(--accent); }
