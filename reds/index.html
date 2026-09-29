@@ -11,14 +11,9 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> -->
 
-  <link href="https://fonts.googleapis.com/css2?family=FontAwesome" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/theme.css">
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <!-- <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script> -->
@@ -27,6 +22,9 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
+    <nav class="project-nav" aria-label="Project navigation"><a href="../">← Home</a></nav>
 
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -74,13 +72,13 @@
             <div class="clear-float">
               <div class="paper-btn-parent">
                   <a class="paper-btn" href="https://openreview.net/pdf?id=mqKVe6F3Up">
-                      <span class="fas fa-file-alt"></span> 
+                      <span class="fas fa-file-alt"></span>
                       Paper
-                  </a>   
+                  </a>
                   <a class="github-btn" href="https://github.com/csmile-1006/REDS_agent">
-                      <span class="fab fa-github"></span> 
+                      <span class="fab fa-github"></span>
                       Code
-                  </a>           
+                  </a>
             </div>
           </div>
 
@@ -95,12 +93,12 @@
       <!-- <hr> -->
         <div class="is-light">
             <div class="content has-text-justified">
-            <p class="is-size-5">We propose <b><font color="#BD3039">REDS: <em>REward learning from Demonstration with Segmentations</em></font></b>, a new reward learning framework that leverages action-free videos with minimal supervision by treating segmented video demonstrations as ground-truth rewards.</p>
+            <p class="is-size-5">We propose <b><span class="highlight">REDS: <em>REward learning from Demonstration with Segmentations</em></span></b>, a new reward learning framework that leverages action-free videos with minimal supervision by treating segmented video demonstrations as ground-truth rewards.</p>
             </div>
-        </div>  
+        </div>
         <br/>
 
-        <video width="100%" controls autoplay muted loop>
+        <video preload="metadata" playsinline controls autoplay muted loop aria-label="REDS method overview">
           <source src="./static/videos/REDS_overview.mp4" type="video/mp4">
         </video>
         <br/>
@@ -136,7 +134,7 @@
             </div>
             <div class="content has-text-justified">
               <p>
-                We study REDS in various robotic manipulation tasks from <a href="https://meta-world.github.io/"></a>Meta-world</a> in simulation and robotic furniture assembly tasks from <a href="https://clvrai.github.io/furniture-bench/">FurnitureBench</a> in the real-world.
+                We study REDS in various robotic manipulation tasks from <a href="https://meta-world.github.io/">Meta-world</a> in simulation and robotic furniture assembly tasks from <a href="https://clvrai.github.io/furniture-bench/">FurnitureBench</a> in the real-world.
               </p>
             </div>
             <br/>
@@ -152,17 +150,17 @@
             <br/>
 
             <h4 class="title is-4">Experimental Results: FurnitureBench</h4>
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <div style="width: 40%;">
+            <div class="results-grid">
+              <div>
                 <img src="./static/images/furniturebench.png" alt="Experimental results on FurnitureBench" style="width: 100%; margin-bottom: 10px;"/>
                 <img src="./static/images/fb_example.png" alt="Additional FurnitureBench results" style="width: 100%;"/>
               </div>
-              <img src="./static/images/fb_reds_graph.png" alt="Qualitative results on FurnitureBench" style="width: 60%;"/>
+              <img src="./static/images/fb_reds_graph.png" alt="Qualitative results on FurnitureBench"/>
             </div>
             <br/>
             <div class="content has-text-justified">
               <p>
-                REDS demonstrates superior performance in real-world furniture assembly tasks through online fine-tuning, achieving a score of 2.45 with just 300 demonstrations compared to baseline IQL's 1.8 with 500 demonstrations. 
+                REDS demonstrates superior performance in real-world furniture assembly tasks through online fine-tuning, achieving a score of 2.45 with just 300 demonstrations compared to baseline IQL's 1.8 with 500 demonstrations.
                 In the right figure, we show qualitative results of REDS and subtask segmentations, where REDS successfully infers the ongoing subtask and generates appropriate rewards.
                 This strong performance, combined with minimal human intervention requirements, showcases REDS as a promising approach for scaling reinforcement learning to diverse real-world robotics applications.
               </p>
@@ -178,10 +176,9 @@
                 We also show that REDS can generalize to unseen robot embodiments, showcasing its potential for real-world deployment.
               </p>
             </div>
-            
+
         </section>
 
-</body>
 <section id="bibtex">
         <h3 class="title is-3">Citation</h3>
         <hr>
@@ -193,4 +190,6 @@
 }</code></pre>
     </section>
 
+  </main>
+</body>
 </html>

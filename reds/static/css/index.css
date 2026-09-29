@@ -2,15 +2,11 @@ body {
     font-family: "sans-serif", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 300;
     font-size: 19px;
+    width: min(980px, calc(100% - 40px));
     margin-left: auto;
     margin-right: auto;
 }
 
-@media screen and (min-width: 980px){
-    body {
-        width: 980px;
-    }
-}
 
 h1 {
     font-weight:300;
@@ -19,14 +15,6 @@ h1 {
 
 h2 {
     font-size: 1.75em;
-}
-a:link,a:visited {
-    /* color: #0E710E; */
-    color: #BD3039;
-    text-decoration: none;
-}
-a:hover {
-    color: #208799;
 }
 h1 {
     text-align: center;
@@ -148,6 +136,9 @@ p {
     margin-bottom: 10px;
 }
 video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: auto;
 }
@@ -185,20 +176,21 @@ figure {
 }
 
 .paper-btn:hover {
-    color: #FF8563;
+    color: var(--accent-hover);
     transform: translateY(-2px);
 }
 
 .paper-btn-parent {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 16px 0px;
     gap: 25px;
     font-size: 20px;
 }
 
 .github-btn:hover {
-    color: #FF8563;
+    color: var(--accent-hover);
     transform: translateY(-2px);
 }
 
@@ -370,3 +362,18 @@ blockquote {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+.project-nav { padding-top: 24px; font-size: 16px; }
+.hero-body { padding: 2rem 0; }
+.title.publication-title { font-size: clamp(1.65rem, 4vw, 3rem); }
+.author-block { display: inline-block; }
+.paper-btn-parent a { padding: 6px 12px; border: 1px solid var(--accent-border); border-radius: 6px; background: var(--accent-soft); }
+.paper-btn-parent a:hover { background: var(--accent); color: #fff; text-decoration: none; }
+section a { text-decoration: underline; text-underline-offset: 0.15em; }
+.skip-link { position: absolute; top: 12px; left: 12px; padding: 8px 12px; background: #fff; transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 640px) {
+    section, .content.has-text-justified { text-align: left !important; }
+}
+.results-grid { display: grid; grid-template-columns: 2fr 3fr; align-items: center; }
+@media (max-width: 640px) { .results-grid { grid-template-columns: 1fr; gap: 20px; } }

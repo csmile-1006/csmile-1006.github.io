@@ -11,14 +11,9 @@
   <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> -->
 
-  <link href="https://fonts.googleapis.com/css2?family=FontAwesome" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../assets/css/theme.css">
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <!-- <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script> -->
@@ -27,6 +22,9 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
+    <nav class="project-nav" aria-label="Project navigation"><a href="../">← Home</a></nav>
 
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -40,7 +38,7 @@
                 <a target="_blank" rel="noopener" href="https://csmile-1006.github.io/">Changyeon Kim</a><sup>1</sup> </span>
                   &nbsp;&nbsp;
               <span class="author-block">
-                <a target="_blank" rel="noopener" href="https://csmile-1006.github.io">Haeone Lee</a><sup>1</sup></span>
+                <a target="_blank" rel="noopener" href="http://haeone.site/">Haeone Lee</a><sup>1</sup></span>
                 &nbsp;&nbsp;
               <span class="author-block">
                 <a target="_blank" rel="noopener" href="https://younggyo.me">Younggyo Seo</a><sup>2</sup></span>
@@ -65,23 +63,23 @@
             </div>
 
             <div class="is-size-4 publication-authors" style="margin-top: 12px;">
-              <span style="color: #008348; font-weight: bold;">ICLR 2026</span>
+              <span style="color: var(--accent); font-weight: bold;">ICLR 2026</span>
             </div>
 
             <div class="clear-float">
               <div class="paper-btn-parent">
                   <a class="paper-btn" href="./assets/pdf/DEAS.pdf">
-                      <span class="fas fa-file-alt"></span> 
+                      <span class="fas fa-file-alt"></span>
                       Paper
-                  </a>   
+                  </a>
                   <a class="github-btn" href="https://github.com/csmile-1006/DEAS-Isaac-GR00T">
-                      <span class="fab fa-github-square"></span> 
+                      <span class="fab fa-github-square"></span>
                       Code (RoboCasa)
-                  </a>           
+                  </a>
                   <a class="hf-btn" href="https://huggingface.co/datasets/changyeon/deas_robocasa">
-                      <span class="fab fa-google-drive"></span> 
+                      <span class="fab fa-google-drive"></span>
                       Dataset (RoboCasa)
-                  </a>           
+                  </a>
                   <a class="github-btn" href="https://github.com/csmile-1006/DEAS-FQL">
                       <span class="fab fa-github-square"></span>
                       Code (OGBench)
@@ -96,11 +94,11 @@
 
     <!-- <section>
       <div class="container is-max-desktop">
-        <div style="background-color: #f0f9f4; border-left: 4px solid #008348; padding: 16px 20px; margin: 20px 0; border-radius: 4px;">
+        <div style="background-color: var(--accent-soft); border-left: 4px solid var(--accent); padding: 16px 20px; margin: 20px 0; border-radius: 4px;">
           <p style="margin: 0; font-size: 16px; color: #333;">
-            <strong style="color: #008348;">📣 Changyeon Kim is actively on the job market!</strong>
+            <strong style="color: var(--accent);">📣 Changyeon Kim is actively on the job market!</strong>
             If you're interested in my work or would like to chat about research, feel free to reach out at
-            <a href="mailto:cykim1006@gmail.com" style="color: #008348; font-weight: bold;">cykim1006@gmail.com</a>.
+            <a href="mailto:cykim1006@gmail.com" style="color: var(--accent); font-weight: bold;">cykim1006@gmail.com</a>.
           </p>
         </div>
       </div>
@@ -112,23 +110,23 @@
         <h3 class="title is-3">TL;DR &amp; Key Insights</h3>
         <div style="background-color: #fafafa; border: 1px solid #e0e0e0; border-radius: 6px; padding: 20px 24px; margin-bottom: 16px;">
           <p class="is-size-5" style="margin-bottom: 14px;">
-            <strong><font color="#008348">DEAS</font></strong> is a simple yet effective offline RL framework that learns a critic over <strong>H-step action sequences</strong> with <strong>detached value learning</strong>, enabling <strong>stable, plug-and-play RL enhancement of VLA models.</strong>
+            <strong><span class="highlight">DEAS</span></strong> is a simple yet effective offline RL framework that learns a critic over <strong>H-step action sequences</strong> with <strong>detached value learning</strong>, enabling <strong>stable, plug-and-play RL enhancement of VLA models.</strong>
           </p>
           <ul style="margin-left: 20px; font-size: 16px; line-height: 1.7;">
             <!-- <li>
-              <strong style="color: #008348;">Action sequences as decision units.</strong>
+              <strong style="color: var(--accent);">Action sequences as decision units.</strong>
               Treating H-step sequences as single decisions reduces the effective planning horizon, providing n-step-TD-like stability <em>without</em> requiring explicit goal conditioning.
             </li> -->
             <li>
-              <strong style="color: #008348;">Detached value learning.</strong>
+              <strong style="color: var(--accent);">Detached value learning.</strong>
               Decouple the critic from the actor to avoid value overestimation over expanded action spaces.
             </li>
             <li>
-              <strong style="color: #008348;">Distributional RL + dual discount factors.</strong>
+              <strong style="color: var(--accent);">Distributional RL + dual discount factors.</strong>
               Categorical values with separate intra- / inter-sequence discounts γ<sub>1</sub>, γ<sub>2</sub><sup>H</sup> stabilize multi-step returns.
             </li>
             <li>
-              <strong style="color: #008348;">Plug-and-play with any policy, including large VLAs.</strong>
+              <strong style="color: var(--accent);">Plug-and-play with any policy, including large VLAs.</strong>
               Boosts GR00T N1.5 / pi_0 on RoboCasa Kitchen and real-world Franka manipulation without architectural changes.
             </li>
           </ul>
@@ -142,7 +140,7 @@
       <!-- <hr> -->
         <!-- <div class="is-light">
             <div class="content has-text-justified">
-            <p class="is-size-5">We present <strong><font color="#008348">DEAS</font></strong>, an offline RL framework that learns from <strong>action sequences</strong> instead of single actions. Unlike previous methods that couple actor-critic training, our key insight is to <strong>train the action-sequence critic separately from the policy through detached value learning</strong>, which enables stable learning while avoiding value overestimation. We further enhance stability by combining distributional RL with detached value learning and using dual discount factors. DEAS can be directly used to enhance VLA performance in both real-world robotic manipulation and simulated environments.</p>
+            <p class="is-size-5">We present <strong><span class="highlight">DEAS</span></strong>, an offline RL framework that learns from <strong>action sequences</strong> instead of single actions. Unlike previous methods that couple actor-critic training, our key insight is to <strong>train the action-sequence critic separately from the policy through detached value learning</strong>, which enables stable learning while avoiding value overestimation. We further enhance stability by combining distributional RL with detached value learning and using dual discount factors. DEAS can be directly used to enhance VLA performance in both real-world robotic manipulation and simulated environments.</p>
             </div>
         </div>
         <br/> -->
@@ -204,137 +202,121 @@
 
             <div class="content has-text-justified">
               <p>
-                <strong>DEAS demonstrates consistent performance improvements across all tasks</strong> In contrast, <strong>baseline methods show inconsistent performance</strong>—while some methods perform well on certain tasks, they exhibit significant performance degradation or minimal improvement on others. 
+                <strong>DEAS demonstrates consistent performance improvements across all tasks</strong> In contrast, <strong>baseline methods show inconsistent performance</strong>—while some methods perform well on certain tasks, they exhibit significant performance degradation or minimal improvement on others.
              </p>
             </div>
 
             <h5 class="title is-5">Peach</h5>
-            <p>All videos are <italic>2x real-time</italic>.</p><br/>
-            <div style="text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+            <p>All videos are <em>2x real-time</em>.</p><br/>
+            <div class="video-grid">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, GR00T N1.5, front camera top">
                   <source src="./static/videos/franka/FT/peach/front_camera_top.mp4" type="video/mp4">
                 </video>
-              </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
-                  <source src="./static/videos/franka/SIL/peach/front_camera_top.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
-                  <source src="./static/videos/franka/iql/peach/front_camera_top.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
-                  <source src="./static/videos/franka/qc/peach/front_camera_top.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
-                  <source src="./static/videos/franka/ours/peach/front_camera_top.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <br/>
-            <div style="text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, GR00T N1.5, front camera bottom">
                   <source src="./static/videos/franka/FT/peach/front_camera_bottom.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">GR00T N1.5</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, Filtered BC, front camera top">
+                  <source src="./static/videos/franka/SIL/peach/front_camera_top.mp4" type="video/mp4">
+                </video>
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, Filtered BC, front camera bottom">
                   <source src="./static/videos/franka/SIL/peach/front_camera_bottom.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">Filtered BC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, IQL, front camera top">
+                  <source src="./static/videos/franka/iql/peach/front_camera_top.mp4" type="video/mp4">
+                </video>
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, IQL, front camera bottom">
                   <source src="./static/videos/franka/iql/peach/front_camera_bottom.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">IQL</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, QC, front camera top">
+                  <source src="./static/videos/franka/qc/peach/front_camera_top.mp4" type="video/mp4">
+                </video>
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, QC, front camera bottom">
                   <source src="./static/videos/franka/qc/peach/front_camera_bottom.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">QC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, DEAS, front camera top">
+                  <source src="./static/videos/franka/ours/peach/front_camera_top.mp4" type="video/mp4">
+                </video>
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Peach, DEAS, front camera bottom">
                   <source src="./static/videos/franka/ours/peach/front_camera_bottom.mp4" type="video/mp4">
                 </video>
-                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #008348;">DEAS (Ours)</p>
+                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: var(--accent);">DEAS (Ours)</p>
               </div>
             </div>
             <br/>
             <h5 class="title is-5">Hichew</h5>
-            <p>All videos are <italic>2x real-time</italic>.</p><br/>
-            <div style="text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+            <p>All videos are <em>2x real-time</em>.</p><br/>
+            <div class="video-grid">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, GR00T N1.5, front camera left">
                   <source src="./static/videos/franka/FT/hichew/front_camera_left.mp4" type="video/mp4">
                 </video>
-              </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
-                  <source src="./static/videos/franka/SIL/hichew/front_camera_left.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
-                  <source src="./static/videos/franka/iql/hichew/front_camera_left.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
-                  <source src="./static/videos/franka/qc/hichew/front_camera_left.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
-                  <source src="./static/videos/franka/ours/hichew/front_camera_left.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-            <br/>
-            <div style="text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, GR00T N1.5, front camera right">
                   <source src="./static/videos/franka/FT/hichew/front_camera_right.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">GR00T N1.5</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, Filtered BC, front camera left">
+                  <source src="./static/videos/franka/SIL/hichew/front_camera_left.mp4" type="video/mp4">
+                </video>
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, Filtered BC, front camera right">
                   <source src="./static/videos/franka/SIL/hichew/front_camera_right.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">Filtered BC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, IQL, front camera left">
+                  <source src="./static/videos/franka/iql/hichew/front_camera_left.mp4" type="video/mp4">
+                </video>
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, IQL, front camera right">
                   <source src="./static/videos/franka/iql/hichew/front_camera_right.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">IQL</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, QC, front camera left">
+                  <source src="./static/videos/franka/qc/hichew/front_camera_left.mp4" type="video/mp4">
+                </video>
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, QC, front camera right">
                   <source src="./static/videos/franka/qc/hichew/front_camera_right.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">QC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, DEAS, front camera left">
+                  <source src="./static/videos/franka/ours/hichew/front_camera_left.mp4" type="video/mp4">
+                </video>
+
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="Hichew, DEAS, front camera right">
                   <source src="./static/videos/franka/ours/hichew/front_camera_right.mp4" type="video/mp4">
                 </video>
-                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #008348;">DEAS (Ours)</p>
+                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: var(--accent);">DEAS (Ours)</p>
               </div>
             </div>
             <br/>
-            
+
             <hr style="border: none; border-top: 2px solid #e0e0e0; margin: 32px 0;">
 
             <h4 class="title is-4">RoboCasa Kitchen</h4>
@@ -343,7 +325,7 @@
                 We report the success rate (%, over 50 trials per task) on 4 tasks, aggregated with 3 different seeds. <strong>Bold</strong> and <u>underline</u> indicate best and runner-up results, respectively.
               </p>
             </div>
- 
+
             <div style="text-align: center;">
               <img src="./static/images/robocasa_results.png" alt="Experimental results on RoboCasa Kitchen" style="max-width: 90%; height: auto;"/>
             </div>
@@ -354,141 +336,141 @@
             </div>
             <br/>
             <h5 class="title is-5">CoffeeSetupMug</h5>
-                        <div style="text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+                        <div class="video-grid">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="CoffeeSetupMug, GR00T N1.5">
                   <source src="./static/videos/robocasa/CoffeeSetupMug/FT.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">GR00T N1.5</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="CoffeeSetupMug, Filtered BC">
                   <source src="./static/videos/robocasa/CoffeeSetupMug/SIL.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">Filtered BC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="CoffeeSetupMug, IQL">
                   <source src="./static/videos/robocasa/CoffeeSetupMug/IQL.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">IQL</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="CoffeeSetupMug, QC">
                   <source src="./static/videos/robocasa/CoffeeSetupMug/QC.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">QC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="CoffeeSetupMug, DEAS">
                   <source src="./static/videos/robocasa/CoffeeSetupMug/DEAS.mp4" type="video/mp4">
                 </video>
-                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #008348;">DEAS (Ours)</p>
+                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: var(--accent);">DEAS (Ours)</p>
               </div>
             </div>
             <br/>
 
             <h5 class="title is-5">PnPCounterToMicrowave</h5>
-                        <div style="text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+                        <div class="video-grid">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPCounterToMicrowave, GR00T N1.5">
                   <source src="./static/videos/robocasa/PnPCounterToMicrowave/FT.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">GR00T N1.5</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPCounterToMicrowave, Filtered BC">
                   <source src="./static/videos/robocasa/PnPCounterToMicrowave/SIL.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">Filtered BC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPCounterToMicrowave, IQL">
                   <source src="./static/videos/robocasa/PnPCounterToMicrowave/IQL.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">IQL</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPCounterToMicrowave, QC">
                   <source src="./static/videos/robocasa/PnPCounterToMicrowave/QC.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">QC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPCounterToMicrowave, DEAS">
                   <source src="./static/videos/robocasa/PnPCounterToMicrowave/DEAS.mp4" type="video/mp4">
                 </video>
-                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #008348;">DEAS (Ours)</p>
+                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: var(--accent);">DEAS (Ours)</p>
               </div>
             </div>
             <br/>
 
             <h5 class="title is-5">PnPMicrowaveToCounter</h5>
-                        <div style="text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+                        <div class="video-grid">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPMicrowaveToCounter, GR00T N1.5">
                   <source src="./static/videos/robocasa/PnPMicrowaveToCounter/FT.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">GR00T N1.5</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPMicrowaveToCounter, Filtered BC">
                   <source src="./static/videos/robocasa/PnPMicrowaveToCounter/SIL.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">Filtered BC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPMicrowaveToCounter, IQL">
                   <source src="./static/videos/robocasa/PnPMicrowaveToCounter/IQL.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">IQL</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPMicrowaveToCounter, QC">
                   <source src="./static/videos/robocasa/PnPMicrowaveToCounter/QC.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">QC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="PnPMicrowaveToCounter, DEAS">
                   <source src="./static/videos/robocasa/PnPMicrowaveToCounter/DEAS.mp4" type="video/mp4">
                 </video>
-                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #008348;">DEAS (Ours)</p>
+                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: var(--accent);">DEAS (Ours)</p>
               </div>
             </div>
             <br/>
 
             <h5 class="title is-5">TurnOffStove</h5>
-                        <div style="text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+                        <div class="video-grid">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="TurnOffStove, GR00T N1.5">
                   <source src="./static/videos/robocasa/TurnOffStove/FT.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">GR00T N1.5</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="TurnOffStove, Filtered BC">
                   <source src="./static/videos/robocasa/TurnOffStove/SIL.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">Filtered BC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="TurnOffStove, IQL">
                   <source src="./static/videos/robocasa/TurnOffStove/IQL.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">IQL</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="TurnOffStove, QC">
                   <source src="./static/videos/robocasa/TurnOffStove/QC.mp4" type="video/mp4">
                 </video>
                 <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #333;">QC</p>
               </div>
-              <div style="display: flex; flex-direction: column; align-items: center; width: 18%;">
-                <video width="100%" controls muted style="border-radius: 8px;">
+              <div>
+                <video preload="metadata" playsinline controls muted style="border-radius: 8px;" aria-label="TurnOffStove, DEAS">
                   <source src="./static/videos/robocasa/TurnOffStove/DEAS.mp4" type="video/mp4">
                 </video>
-                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: #008348;">DEAS (Ours)</p>
+                <p style="margin-top: 8px; font-size: 14px; font-weight: bold; color: var(--accent);">DEAS (Ours)</p>
               </div>
             </div>
             <br/>
@@ -505,10 +487,9 @@
               </p>
             </div>
             <br/>
-           
+
         </section>
 
-</body>
 <section id="bibtex">
         <h3 class="title is-3">Citation</h3>
         <hr>
@@ -520,4 +501,6 @@
 }</code></pre>
     </section>
 
+  </main>
+</body>
 </html>
