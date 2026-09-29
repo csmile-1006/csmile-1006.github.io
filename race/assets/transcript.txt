@@ -1,0 +1,62 @@
+RACE: Calibrated Cumulative Scoring for Rollout-Free Checkpoint Selection
+Supplementary video transcript
+
+[00:00:00.200 - 00:00:05.596]
+Race: Calibrated Cumulative Scoring for Rollout-Free Checkpoint Selection.
+
+[00:00:06.446 - 00:00:13.982]
+During training, we save checkpoints at regular intervals. But lower training loss does not guarantee higher task success.
+
+[00:00:14.832 - 00:00:29.578]
+Measuring every checkpoint requires repeated robot trials and resets. A common alternative is averaged prediction error: the average mismatch between predicted actions and held-out demonstrations. But this can mislead selection.
+
+[00:00:30.428 - 00:00:42.194]
+Consider two policies. A imitates closely but fails. B deviates more but succeeds. Yet lower mean squared error favors A. Why?
+
+[00:00:43.494 - 00:00:50.820]
+Smaller recoverable deviations need not improve success. Averaging can hide A's fatal mistake.
+
+[00:00:51.670 - 00:00:58.286]
+Race therefore gives equal scores to deviations within a threshold, and penalizes deviations beyond it.
+
+[00:00:59.136 - 00:01:11.139]
+For each action group, Race sets a high-quantile threshold from action differences at similar states in successful references. We combine group scores into a timestep score.
+
+[00:01:11.989 - 00:01:19.065]
+Averaging also counts later predictions, even when earlier deviations could take the robot away from those reference states.
+
+[00:01:19.915 - 00:01:29.212]
+Race takes a running product of timestep scores, reducing later contributions after a low score. Averaging this curve penalizes earlier departures more.
+
+[00:01:30.062 - 00:01:33.998]
+We average across references and rank checkpoints: higher is better.
+
+[00:01:34.848 - 00:01:40.604]
+We test eight DexMimicGen tasks, using three sources of successful reference trajectories.
+
+[00:01:41.454 - 00:01:43.700]
+Ten held-out demonstrations.
+
+[00:01:44.250 - 00:01:47.536]
+Ten successful policy rollouts.
+
+[00:01:48.086 - 00:01:51.888]
+Or ten successful rollouts collected with action noise.
+
+[00:01:52.738 - 00:02:08.024]
+Mean maximum rank violation measures ranking errors, penalizing larger success-rate gaps more heavily. Lower is better. Race maintains low error across all three reference sources, with the lowest mean among the compared methods.
+
+[00:02:08.874 - 00:02:15.120]
+Next, we evaluate a vision-language-action policy on three real-world manipulation tasks.
+
+[00:02:15.970 - 00:02:24.906]
+Each point represents a checkpoint. Race scores track measured success more closely than the compared baselines, with lower ranking error.
+
+[00:02:25.756 - 00:02:29.000]
+We also evaluate DROID diffusion policies.
+
+[00:02:29.850 - 00:02:39.936]
+The mismatch is even stronger: lower validation loss or MSE can favor worse checkpoints. Race remains aligned with measured success.
+
+[00:02:40.786 - 00:02:58.232]
+Finally, compare Race scores with checkpoint success rates measured through repeated robot trials. Across checkpoints, the two curves follow similar trends. Race captures these performance differences using held-out demonstrations collected in advance, without running each candidate on the robot.

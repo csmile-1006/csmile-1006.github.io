@@ -1,0 +1,1831 @@
+{
+  "provenance": {
+    "real": "supplementary_v8/real_data.json",
+    "real_task_metrics": {
+      "file": "website/task_metrics.csv",
+      "source_sha256": {
+        "vla": "8986d2d1edb38728e94e099e066b5e6e71c0052bb39cfe99a8ec982accfbcd13",
+        "dp": "c2029272c1ff690ec68ed0588b02c06043b339354afc2192ce27dc0dfd5112d6"
+      }
+    },
+    "simulation": "tables/01_dexmimicgen.tex"
+  },
+  "notes": {
+    "real": "Source checkpoint measurements, per-task metrics, and task-averaged point estimates; no confidence intervals are provided. Baseline scores are already negated so higher is better. Scatter coordinates are normalized within each task.",
+    "simulation": "Task-specific RACE settings. Eight tasks, ten training seeds per task, twelve checkpoints per run; ten successful reference trajectories per source. Means and 95% hierarchical bootstrap intervals from the paper table."
+  },
+  "real": {
+    "vla": {
+      "raw": [
+        {
+          "task": "fruit",
+          "step": 400,
+          "success_rate": 0.7,
+          "Validation Loss": -0.03145711123943329,
+          "Off-Manifold Norm": -0.849388445933305,
+          "Valid MSE": -0.013763005167414587,
+          "Ours": 0.30216761812563353
+        },
+        {
+          "task": "fruit",
+          "step": 600,
+          "success_rate": 0.9,
+          "Validation Loss": -0.019576378166675568,
+          "Off-Manifold Norm": -0.8055763415522423,
+          "Valid MSE": -0.013375992934948842,
+          "Ours": 0.3876026871394025
+        },
+        {
+          "task": "fruit",
+          "step": 800,
+          "success_rate": 0.9329999999999999,
+          "Validation Loss": -0.0186528991907835,
+          "Off-Manifold Norm": -0.7777713457205331,
+          "Valid MSE": -0.013568150408796992,
+          "Ours": 0.3484724269117447
+        },
+        {
+          "task": "fruit",
+          "step": 1000,
+          "success_rate": 0.833,
+          "Validation Loss": -0.018624763935804367,
+          "Off-Manifold Norm": -0.7695595242729536,
+          "Valid MSE": -0.013970970718664521,
+          "Ours": 0.344695868847409
+        },
+        {
+          "task": "fruit",
+          "step": 1200,
+          "success_rate": 0.778,
+          "Validation Loss": -0.018863920122385025,
+          "Off-Manifold Norm": -0.7556088976316473,
+          "Valid MSE": -0.0141139874314483,
+          "Ours": 0.3436626520642078
+        },
+        {
+          "task": "fruit",
+          "step": 1400,
+          "success_rate": 0.778,
+          "Validation Loss": -0.01926344819366932,
+          "Off-Manifold Norm": -0.7589406872811837,
+          "Valid MSE": -0.014213233757399277,
+          "Ours": 0.33321650533739616
+        },
+        {
+          "task": "fruit",
+          "step": 1600,
+          "success_rate": 0.8440000000000001,
+          "Validation Loss": -0.01992371864616871,
+          "Off-Manifold Norm": -0.750891426653615,
+          "Valid MSE": -0.014275959092864443,
+          "Ours": 0.3162676544549373
+        },
+        {
+          "task": "fruit",
+          "step": 1800,
+          "success_rate": 0.711,
+          "Validation Loss": -0.02062116377055645,
+          "Off-Manifold Norm": -0.7437618818218221,
+          "Valid MSE": -0.014569021151830413,
+          "Ours": 0.32575078336216784
+        },
+        {
+          "task": "fruit",
+          "step": 1999,
+          "success_rate": 0.7559999999999999,
+          "Validation Loss": -0.021131418645381927,
+          "Off-Manifold Norm": -0.7374340006021682,
+          "Valid MSE": -0.014657992179988363,
+          "Ours": 0.31404210367275387
+        },
+        {
+          "task": "stack_cup",
+          "step": 400,
+          "success_rate": 0.65,
+          "Validation Loss": -0.02716926671564579,
+          "Off-Manifold Norm": -0.7906451182771915,
+          "Valid MSE": -0.011666157639718545,
+          "Ours": 0.22518065080604438
+        },
+        {
+          "task": "stack_cup",
+          "step": 600,
+          "success_rate": 0.9,
+          "Validation Loss": -0.01696336269378662,
+          "Off-Manifold Norm": -0.761608881460283,
+          "Valid MSE": -0.011875048243030482,
+          "Ours": 0.27264078255133606
+        },
+        {
+          "task": "stack_cup",
+          "step": 800,
+          "success_rate": 0.9670000000000001,
+          "Validation Loss": -0.016206564381718636,
+          "Off-Manifold Norm": -0.7469830358188775,
+          "Valid MSE": -0.011660181143431739,
+          "Ours": 0.2742133808408556
+        },
+        {
+          "task": "stack_cup",
+          "step": 1000,
+          "success_rate": 0.9670000000000001,
+          "Validation Loss": -0.01633152738213539,
+          "Off-Manifold Norm": -0.7494767205904512,
+          "Valid MSE": -0.011794899275379144,
+          "Ours": 0.2744220791416658
+        },
+        {
+          "task": "stack_cup",
+          "step": 1200,
+          "success_rate": 0.95,
+          "Validation Loss": -0.016858812421560287,
+          "Off-Manifold Norm": -0.7663835027851922,
+          "Valid MSE": -0.012411684188133348,
+          "Ours": 0.2596076096874775
+        },
+        {
+          "task": "stack_cup",
+          "step": 1400,
+          "success_rate": 0.85,
+          "Validation Loss": -0.01754317246377468,
+          "Off-Manifold Norm": -0.75903956020892,
+          "Valid MSE": -0.0124679204103923,
+          "Ours": 0.25513594004956897
+        },
+        {
+          "task": "stack_cup",
+          "step": 1600,
+          "success_rate": 0.883,
+          "Validation Loss": -0.018064280971884727,
+          "Off-Manifold Norm": -0.7545573115055791,
+          "Valid MSE": -0.012625381791928916,
+          "Ours": 0.26850281664390135
+        },
+        {
+          "task": "stack_cup",
+          "step": 1800,
+          "success_rate": 0.867,
+          "Validation Loss": -0.01830761879682541,
+          "Off-Manifold Norm": -0.7525040214740226,
+          "Valid MSE": -0.012576707546304631,
+          "Ours": 0.27104510236997564
+        },
+        {
+          "task": "stack_cup",
+          "step": 1999,
+          "success_rate": 0.9329999999999999,
+          "Validation Loss": -0.01896173134446144,
+          "Off-Manifold Norm": -0.7453701406097821,
+          "Valid MSE": -0.012594179715718083,
+          "Ours": 0.2511498045325992
+        },
+        {
+          "task": "two_cubes",
+          "step": 400,
+          "success_rate": 0.467,
+          "Validation Loss": -0.029780499637126923,
+          "Off-Manifold Norm": -0.7951902307573434,
+          "Valid MSE": -0.013634035122780722,
+          "Ours": 0.0031926521763309774
+        },
+        {
+          "task": "two_cubes",
+          "step": 600,
+          "success_rate": 0.7,
+          "Validation Loss": -0.01917542889714241,
+          "Off-Manifold Norm": -0.7850233720591908,
+          "Valid MSE": -0.013835715684859277,
+          "Ours": 0.003479826110937466
+        },
+        {
+          "task": "two_cubes",
+          "step": 800,
+          "success_rate": 0.867,
+          "Validation Loss": -0.018522106111049652,
+          "Off-Manifold Norm": -0.7572253878803933,
+          "Valid MSE": -0.014081986238581362,
+          "Ours": 0.004460115390535956
+        },
+        {
+          "task": "two_cubes",
+          "step": 1000,
+          "success_rate": 0.7170000000000001,
+          "Validation Loss": -0.018556931987404823,
+          "Off-Manifold Norm": -0.7455926148744845,
+          "Valid MSE": -0.014353379677362907,
+          "Ours": 0.003911323661954446
+        },
+        {
+          "task": "two_cubes",
+          "step": 1200,
+          "success_rate": 0.833,
+          "Validation Loss": -0.019167261198163033,
+          "Off-Manifold Norm": -0.7706976973557812,
+          "Valid MSE": -0.014787799846380486,
+          "Ours": 0.003913120955425934
+        },
+        {
+          "task": "two_cubes",
+          "step": 1400,
+          "success_rate": 0.833,
+          "Validation Loss": -0.01976574771106243,
+          "Off-Manifold Norm": -0.7421383494669315,
+          "Valid MSE": -0.01462943082947866,
+          "Ours": 0.004036573301100974
+        },
+        {
+          "task": "two_cubes",
+          "step": 1600,
+          "success_rate": 0.8170000000000001,
+          "Validation Loss": -0.02095158025622368,
+          "Off-Manifold Norm": -0.7523062639154384,
+          "Valid MSE": -0.01509461563445941,
+          "Ours": 0.004017233530728814
+        },
+        {
+          "task": "two_cubes",
+          "step": 1800,
+          "success_rate": 0.833,
+          "Validation Loss": -0.02188330888748169,
+          "Off-Manifold Norm": -0.739468011526368,
+          "Valid MSE": -0.015176821977596094,
+          "Ours": 0.004211353665987673
+        },
+        {
+          "task": "two_cubes",
+          "step": 1999,
+          "success_rate": 0.633,
+          "Validation Loss": -0.022230282425880432,
+          "Off-Manifold Norm": -0.7496402823880868,
+          "Valid MSE": -0.0152954450274174,
+          "Ours": 0.0038885283504318533
+        }
+      ],
+      "zscore": [
+        {
+          "task": "fruit",
+          "step": 400,
+          "success_rate": -1.2930834040542667,
+          "Validation Loss": -2.6051058989716,
+          "Off-Manifold Norm": -2.1824020455696456,
+          "Valid MSE": 0.6787606857050125,
+          "Ours": -1.3075142391772057
+        },
+        {
+          "task": "fruit",
+          "step": 600,
+          "success_rate": 1.2016112661468885,
+          "Validation Loss": 0.3270784896109432,
+          "Off-Manifold Norm": -0.9452171112009371,
+          "Valid MSE": 1.5738609494609008,
+          "Ours": 2.0847623618403133
+        },
+        {
+          "task": "fruit",
+          "step": 800,
+          "success_rate": 1.613235886730078,
+          "Validation Loss": 0.5549946139537978,
+          "Off-Manifold Norm": -0.16004775151949574,
+          "Valid MSE": 1.1294300217140159,
+          "Ours": 0.5310600274907363
+        },
+        {
+          "task": "fruit",
+          "step": 1000,
+          "success_rate": 0.3658885516295011,
+          "Validation Loss": 0.561938440981422,
+          "Off-Manifold Norm": 0.07184117329240024,
+          "Valid MSE": 0.1977680860914313,
+          "Ours": 0.3811083776364442
+        },
+        {
+          "task": "fruit",
+          "step": 1200,
+          "success_rate": -0.32015248267581553,
+          "Validation Loss": 0.5029143022830541,
+          "Off-Manifold Norm": 0.46578493265875365,
+          "Valid MSE": -0.1330077566219938,
+          "Ours": 0.34008357180563176
+        },
+        {
+          "task": "fruit",
+          "step": 1400,
+          "success_rate": -0.32015248267581553,
+          "Validation Loss": 0.4043101196752903,
+          "Off-Manifold Norm": 0.37170043210520926,
+          "Valid MSE": -0.3625493707708057,
+          "Ours": -0.07469012149410588
+        },
+        {
+          "task": "fruit",
+          "step": 1600,
+          "success_rate": 0.5030967584905661,
+          "Validation Loss": 0.24135429016504487,
+          "Off-Manifold Norm": 0.5989988949825065,
+          "Valid MSE": -0.5076235043746209,
+          "Ours": -0.7476595581247963
+        },
+        {
+          "task": "fruit",
+          "step": 1800,
+          "success_rate": -1.155875197193203,
+          "Validation Loss": 0.06922369072316581,
+          "Off-Manifold Norm": 0.8003260300153765,
+          "Valid MSE": -1.185431346793403,
+          "Ours": -0.37112335738448426
+        },
+        {
+          "task": "fruit",
+          "step": 1999,
+          "success_rate": -0.5945688963979442,
+          "Validation Loss": -0.0567080484211192,
+          "Off-Manifold Norm": 0.979015445235851,
+          "Valid MSE": -1.3912077644105452,
+          "Ours": -0.836027062592551
+        },
+        {
+          "task": "stack_cup",
+          "step": 400,
+          "success_rate": -2.397925258802999,
+          "Validation Loss": -2.5660919630151544,
+          "Off-Manifold Norm": -2.3137867931139415,
+          "Valid MSE": 1.2251795950194682,
+          "Ours": -2.2506660310127597
+        },
+        {
+          "task": "stack_cup",
+          "step": 600,
+          "success_rate": 0.15064905971695863,
+          "Validation Loss": 0.45122057676193467,
+          "Off-Manifold Norm": -0.22328198895338147,
+          "Valid MSE": 0.7326664440649103,
+          "Ours": 0.7048642414027789
+        },
+        {
+          "task": "stack_cup",
+          "step": 800,
+          "success_rate": 0.8336669770803079,
+          "Validation Loss": 0.6749633272516548,
+          "Off-Manifold Norm": 0.8297263871342648,
+          "Valid MSE": 1.239270717220344,
+          "Ours": 0.802796161945436
+        },
+        {
+          "task": "stack_cup",
+          "step": 1000,
+          "success_rate": 0.8336669770803079,
+          "Validation Loss": 0.6380187873698305,
+          "Off-Manifold Norm": 0.6501900364732434,
+          "Valid MSE": 0.9216381832329387,
+          "Ours": 0.8157926312590154
+        },
+        {
+          "task": "stack_cup",
+          "step": 1200,
+          "success_rate": 0.6603639234209495,
+          "Validation Loss": 0.4821302195285103,
+          "Off-Manifold Norm": -0.5670375823764803,
+          "Valid MSE": -0.5325903748041025,
+          "Ours": -0.10676302401416018
+        },
+        {
+          "task": "stack_cup",
+          "step": 1400,
+          "success_rate": -0.35906580398703336,
+          "Validation Loss": 0.27980339647852165,
+          "Off-Manifold Norm": -0.03830008329960164,
+          "Valid MSE": -0.6651816861575252,
+          "Ours": -0.3852315932547242
+        },
+        {
+          "task": "stack_cup",
+          "step": 1600,
+          "success_rate": -0.02265399394239864,
+          "Validation Loss": 0.12574088200285194,
+          "Off-Manifold Norm": 0.2844057310544177,
+          "Valid MSE": -1.0364372617778814,
+          "Ours": 0.44717672440889744
+        },
+        {
+          "task": "stack_cup",
+          "step": 1800,
+          "success_rate": -0.18576275032767608,
+          "Validation Loss": 0.05379955578392781,
+          "Off-Manifold Norm": 0.432235241550913,
+          "Valid MSE": -0.9216752490177658,
+          "Ours": 0.605494920086639
+        },
+        {
+          "task": "stack_cup",
+          "step": 1999,
+          "success_rate": 0.48706086976159224,
+          "Validation Loss": -0.13958478216208042,
+          "Off-Manifold Norm": 0.9458490515305662,
+          "Valid MSE": -0.9628703677803866,
+          "Ours": -0.633464030821095
+        },
+        {
+          "task": "two_cubes",
+          "step": 400,
+          "success_rate": -2.128416529751334,
+          "Validation Loss": -2.4560143368003247,
+          "Off-Manifold Norm": -1.802851492707323,
+          "Valid MSE": 1.5063489758707445,
+          "Ours": -1.8933371998987845
+        },
+        {
+          "task": "two_cubes",
+          "step": 600,
+          "success_rate": -0.34095579171026624,
+          "Validation Loss": 0.549650434433517,
+          "Off-Manifold Norm": -1.2864187959750353,
+          "Valid MSE": 1.1722122862574302,
+          "Ours": -1.1259601970782893
+        },
+        {
+          "task": "two_cubes",
+          "step": 800,
+          "success_rate": 0.9401855956410576,
+          "Validation Loss": 0.7348136766738242,
+          "Off-Manifold Norm": 0.12559924808280634,
+          "Valid MSE": 0.7642005933016948,
+          "Ours": 1.4935374613918426
+        },
+        {
+          "task": "two_cubes",
+          "step": 1000,
+          "success_rate": -0.21054020138108862,
+          "Validation Loss": 0.7249434068515376,
+          "Off-Manifold Norm": 0.7164940871157982,
+          "Valid MSE": 0.3145662592704467,
+          "Ours": 0.02707375733517686
+        },
+        {
+          "task": "two_cubes",
+          "step": 1200,
+          "success_rate": 0.6793544149827041,
+          "Validation Loss": 0.5519653049031499,
+          "Off-Manifold Norm": -0.5587361322103,
+          "Valid MSE": -0.4051645649636309,
+          "Ours": 0.03187642746340143
+        },
+        {
+          "task": "two_cubes",
+          "step": 1400,
+          "success_rate": 0.6793544149827041,
+          "Validation Loss": 0.3823436331590783,
+          "Off-Manifold Norm": 0.8919559138819951,
+          "Valid MSE": -0.14278479717877202,
+          "Ours": 0.361761836962999
+        },
+        {
+          "task": "two_cubes",
+          "step": 1600,
+          "success_rate": 0.5566103299670091,
+          "Validation Loss": 0.04625769908458957,
+          "Off-Manifold Norm": 0.37546958957222587,
+          "Valid MSE": -0.9134853009493884,
+          "Ours": 0.31008272115549607
+        },
+        {
+          "task": "two_cubes",
+          "step": 1800,
+          "success_rate": 0.6793544149827041,
+          "Validation Loss": -0.2178106878205052,
+          "Off-Manifold Norm": 1.0275975968024362,
+          "Valid MSE": -1.0496816456928584,
+          "Ours": 0.828804337677468
+        },
+        {
+          "task": "two_cubes",
+          "step": 1999,
+          "success_rate": -0.8549466477134915,
+          "Validation Loss": -0.31614913048486565,
+          "Off-Manifold Norm": 0.5108899854373569,
+          "Valid MSE": -1.246211805915675,
+          "Ours": -0.03383914500930772
+        }
+      ],
+      "metrics": {
+        "Validation Loss": {
+          "pearson": 0.7692187506440756,
+          "spearman": 0.6887789481645624,
+          "mmrv": 0.06611111111111108,
+          "nregret": 0.14306151645146037,
+          "regret_pp": 3.3333333333333326,
+          "balanced_loss": 0.17316726471672572,
+          "pooled_spearman": 0.5841737864870744,
+          "pooled_pearson": 0.7692187506440755
+        },
+        "Off-Manifold Norm": {
+          "pearson": 0.4867419676465752,
+          "spearman": 0.22480261118630396,
+          "mmrv": 0.11162962962962963,
+          "nregret": 0.3173040576204788,
+          "regret_pp": 8.166666666666673,
+          "balanced_loss": 0.3624661490481103,
+          "pooled_spearman": 0.20103888677222537,
+          "pooled_pearson": 0.4867419676465751
+        },
+        "Valid MSE": {
+          "pearson": 0.004726098734282276,
+          "spearman": 0.20283952494073798,
+          "mmrv": 0.21325925925925926,
+          "nregret": 0.3805436337614818,
+          "regret_pp": 14.43333333333333,
+          "balanced_loss": 0.4709902593895821,
+          "pooled_spearman": 0.21081585391008434,
+          "pooled_pearson": 0.004726098734282175
+        },
+        "Ours": {
+          "pearson": 0.791261390083532,
+          "spearman": 0.7905601535128192,
+          "mmrv": 0.04203703703703702,
+          "nregret": 0.04721030042898181,
+          "regret_pp": 1.0999999999999972,
+          "balanced_loss": 0.10080591952223171,
+          "pooled_spearman": 0.7693251016602788,
+          "pooled_pearson": 0.7912613900835316
+        }
+      },
+      "checkpoint": "step",
+      "steps": [
+        400,
+        600,
+        800,
+        1000,
+        1200,
+        1400,
+        1600,
+        1800,
+        1999
+      ],
+      "legend": [
+        "stack_cup",
+        "two_cubes",
+        "fruit"
+      ],
+      "tasks": {
+        "fruit": {
+          "name": "PnP Three Fruit",
+          "color": "#4285F4",
+          "marker": "square"
+        },
+        "stack_cup": {
+          "name": "Nest Cups",
+          "color": "#EA4335",
+          "marker": "triangle"
+        },
+        "two_cubes": {
+          "name": "Put Two Cubes",
+          "color": "#34A853",
+          "marker": "diamond"
+        }
+      },
+      "axes": {
+        "xlim": [
+          -3.5,
+          3.0
+        ],
+        "ylim": [
+          -3.0,
+          5.5
+        ]
+      },
+      "method_keys": {
+        "race": "Ours",
+        "loss": "Validation Loss",
+        "mse": "Valid MSE",
+        "omn": "Off-Manifold Norm"
+      },
+      "task_metrics": {
+        "fruit": {
+          "Validation Loss": {
+            "spearman": 0.6778302010921357,
+            "mmrv": 0.08022222222222221,
+            "nregret": 0.4291845493543811
+          },
+          "Off-Manifold Norm": {
+            "spearman": -0.25941649671427414,
+            "mmrv": 0.1527777777777778,
+            "nregret": 0.7596566523572549
+          },
+          "Valid MSE": {
+            "spearman": 0.510464719340991,
+            "mmrv": 0.08266666666666668,
+            "nregret": 0.14163090128694544
+          },
+          "Ours": {
+            "spearman": 0.7782494901428224,
+            "mmrv": 0.0577777777777778,
+            "nregret": 0.14163090128694544
+          }
+        },
+        "stack_cup": {
+          "Validation Loss": {
+            "spearman": 0.7782494901428224,
+            "mmrv": 0.03499999999999997,
+            "nregret": 0.0
+          },
+          "Off-Manifold Norm": {
+            "spearman": 0.54393781569122,
+            "mmrv": 0.055777777777777815,
+            "nregret": 0.10725552050439395
+          },
+          "Valid MSE": {
+            "spearman": 0.2845213189769458,
+            "mmrv": 0.23522222222222222,
+            "nregret": 0.0
+          },
+          "Ours": {
+            "spearman": 0.6610936529170212,
+            "mmrv": 0.04988888888888886,
+            "nregret": 0.0
+          }
+        },
+        "two_cubes": {
+          "Validation Loss": {
+            "spearman": 0.6102571532587293,
+            "mmrv": 0.0831111111111111,
+            "nregret": 0.0
+          },
+          "Off-Manifold Norm": {
+            "spearman": 0.38988651458196594,
+            "mmrv": 0.12633333333333333,
+            "nregret": 0.08499999999978759
+          },
+          "Valid MSE": {
+            "spearman": -0.18646746349572285,
+            "mmrv": 0.3218888888888889,
+            "nregret": 0.9999999999975001
+          },
+          "Ours": {
+            "spearman": 0.9323373174786143,
+            "mmrv": 0.018444444444444413,
+            "nregret": 0.0
+          }
+        }
+      }
+    },
+    "dp": {
+      "raw": [
+        {
+          "task": "apple",
+          "epoch": 5,
+          "successes": 11,
+          "trials": 30,
+          "success_rate": 0.36666666666666664,
+          "Loss": -0.021055004801601173,
+          "Off_Manifold_Norm_PolicyReference": -0.2076067233322499,
+          "MSE_mean_pred": -0.023078521713614464,
+          "SurVAL": 0.005777882819087753
+        },
+        {
+          "task": "apple",
+          "epoch": 10,
+          "successes": 9,
+          "trials": 30,
+          "success_rate": 0.3,
+          "Loss": -0.026134621612727643,
+          "Off_Manifold_Norm_PolicyReference": -0.1718211664952454,
+          "MSE_mean_pred": -0.027358384802937508,
+          "SurVAL": 0.013108038368560285
+        },
+        {
+          "task": "apple",
+          "epoch": 15,
+          "successes": 14,
+          "trials": 30,
+          "success_rate": 0.4666666666666667,
+          "Loss": -0.03630741186439991,
+          "Off_Manifold_Norm_PolicyReference": -0.17018492837936353,
+          "MSE_mean_pred": -0.029620902612805367,
+          "SurVAL": 0.016614779491305916
+        },
+        {
+          "task": "apple",
+          "epoch": 20,
+          "successes": 14,
+          "trials": 30,
+          "success_rate": 0.4666666666666667,
+          "Loss": -0.044215056244283915,
+          "Off_Manifold_Norm_PolicyReference": -0.17065818908835995,
+          "MSE_mean_pred": -0.030683642253279686,
+          "SurVAL": 0.018616006726114152
+        },
+        {
+          "task": "apple",
+          "epoch": 25,
+          "successes": 17,
+          "trials": 30,
+          "success_rate": 0.5666666666666667,
+          "Loss": -0.04551219753921032,
+          "Off_Manifold_Norm_PolicyReference": -0.16765697999232454,
+          "MSE_mean_pred": -0.03164514899253845,
+          "SurVAL": 0.020038886478269666
+        },
+        {
+          "task": "apple",
+          "epoch": 30,
+          "successes": 20,
+          "trials": 30,
+          "success_rate": 0.6666666666666666,
+          "Loss": -0.05258262291550636,
+          "Off_Manifold_Norm_PolicyReference": -0.1681531897776291,
+          "MSE_mean_pred": -0.031992293894290924,
+          "SurVAL": 0.021954941515385844
+        },
+        {
+          "task": "apple",
+          "epoch": 35,
+          "successes": 20,
+          "trials": 30,
+          "success_rate": 0.6666666666666666,
+          "Loss": -0.052979411631822584,
+          "Off_Manifold_Norm_PolicyReference": -0.16847168438247634,
+          "MSE_mean_pred": -0.03226938843727112,
+          "SurVAL": 0.023775728847683968
+        },
+        {
+          "task": "apple",
+          "epoch": 40,
+          "successes": 21,
+          "trials": 30,
+          "success_rate": 0.7,
+          "Loss": -0.05979545276612044,
+          "Off_Manifold_Norm_PolicyReference": -0.168091521880727,
+          "MSE_mean_pred": -0.03267678990960121,
+          "SurVAL": 0.024815965695788103
+        },
+        {
+          "task": "apple",
+          "epoch": 45,
+          "successes": 19,
+          "trials": 30,
+          "success_rate": 0.6333333333333333,
+          "Loss": -0.06097684571519494,
+          "Off_Manifold_Norm_PolicyReference": -0.16881644521807568,
+          "MSE_mean_pred": -0.03281441330909729,
+          "SurVAL": 0.024803114233616943
+        },
+        {
+          "task": "apple",
+          "epoch": 50,
+          "successes": 21,
+          "trials": 30,
+          "success_rate": 0.7,
+          "Loss": -0.06487621514126658,
+          "Off_Manifold_Norm_PolicyReference": -0.17016112807608705,
+          "MSE_mean_pred": -0.033486317843198776,
+          "SurVAL": 0.024827208816892384
+        },
+        {
+          "task": "pan",
+          "epoch": 5,
+          "successes": 6,
+          "trials": 30,
+          "success_rate": 0.2,
+          "Loss": -0.024748352449387313,
+          "Off_Manifold_Norm_PolicyReference": -0.32063024336580703,
+          "MSE_mean_pred": -0.0497521236538887,
+          "SurVAL": 0.9998570829768064
+        },
+        {
+          "task": "pan",
+          "epoch": 10,
+          "successes": 3,
+          "trials": 30,
+          "success_rate": 0.1,
+          "Loss": -0.02958693640306592,
+          "Off_Manifold_Norm_PolicyReference": -0.2626761623489853,
+          "MSE_mean_pred": -0.050598155707120895,
+          "SurVAL": 0.9992325557185996
+        },
+        {
+          "task": "pan",
+          "epoch": 15,
+          "successes": 5,
+          "trials": 30,
+          "success_rate": 0.16666666666666666,
+          "Loss": -0.03580035166814923,
+          "Off_Manifold_Norm_PolicyReference": -0.2554486009750933,
+          "MSE_mean_pred": -0.0537479929625988,
+          "SurVAL": 0.9991023716742201
+        },
+        {
+          "task": "pan",
+          "epoch": 20,
+          "successes": 5,
+          "trials": 30,
+          "success_rate": 0.16666666666666666,
+          "Loss": -0.04076145434752107,
+          "Off_Manifold_Norm_PolicyReference": -0.25958551802263874,
+          "MSE_mean_pred": -0.05617228150367737,
+          "SurVAL": 0.9995179163468613
+        },
+        {
+          "task": "pan",
+          "epoch": 25,
+          "successes": 5,
+          "trials": 30,
+          "success_rate": 0.16666666666666666,
+          "Loss": -0.047915628738701345,
+          "Off_Manifold_Norm_PolicyReference": -0.2602795232711401,
+          "MSE_mean_pred": -0.055979687720537186,
+          "SurVAL": 0.9996847870827048
+        },
+        {
+          "task": "pan",
+          "epoch": 30,
+          "successes": 13,
+          "trials": 30,
+          "success_rate": 0.43333333333333335,
+          "Loss": -0.04803862879052758,
+          "Off_Manifold_Norm_PolicyReference": -0.259760037376398,
+          "MSE_mean_pred": -0.05727466940879822,
+          "SurVAL": 1.0
+        },
+        {
+          "task": "pan",
+          "epoch": 35,
+          "successes": 6,
+          "trials": 30,
+          "success_rate": 0.2,
+          "Loss": -0.05458815947175026,
+          "Off_Manifold_Norm_PolicyReference": -0.2608532131022173,
+          "MSE_mean_pred": -0.05812300369143486,
+          "SurVAL": 1.0
+        },
+        {
+          "task": "pan",
+          "epoch": 40,
+          "successes": 9,
+          "trials": 30,
+          "success_rate": 0.3,
+          "Loss": -0.05928192753344774,
+          "Off_Manifold_Norm_PolicyReference": -0.2569149178140425,
+          "MSE_mean_pred": -0.05803405120968819,
+          "SurVAL": 1.0
+        },
+        {
+          "task": "pan",
+          "epoch": 45,
+          "successes": 6,
+          "trials": 30,
+          "success_rate": 0.2,
+          "Loss": -0.06908529058098793,
+          "Off_Manifold_Norm_PolicyReference": -0.2573961120226072,
+          "MSE_mean_pred": -0.0578404925763607,
+          "SurVAL": 1.0
+        },
+        {
+          "task": "pan",
+          "epoch": 50,
+          "successes": 8,
+          "trials": 30,
+          "success_rate": 0.26666666666666666,
+          "Loss": -0.0758158553391695,
+          "Off_Manifold_Norm_PolicyReference": -0.2595104275391801,
+          "MSE_mean_pred": -0.05848432704806328,
+          "SurVAL": 1.0
+        },
+        {
+          "task": "pet",
+          "epoch": 5,
+          "successes": 2,
+          "trials": 30,
+          "success_rate": 0.06666666666666667,
+          "Loss": -0.018155722636729477,
+          "Off_Manifold_Norm_PolicyReference": -0.27364995920554636,
+          "MSE_mean_pred": -0.033309731632471085,
+          "SurVAL": 0.9744407105678959
+        },
+        {
+          "task": "pet",
+          "epoch": 10,
+          "successes": 8,
+          "trials": 30,
+          "success_rate": 0.26666666666666666,
+          "Loss": -0.01959100306034088,
+          "Off_Manifold_Norm_PolicyReference": -0.20893292699146682,
+          "MSE_mean_pred": -0.03544303774833679,
+          "SurVAL": 0.9930918291991415
+        },
+        {
+          "task": "pet",
+          "epoch": 15,
+          "successes": 11,
+          "trials": 30,
+          "success_rate": 0.36666666666666664,
+          "Loss": -0.023065991625189783,
+          "Off_Manifold_Norm_PolicyReference": -0.201476601128545,
+          "MSE_mean_pred": -0.03823675587773323,
+          "SurVAL": 0.9955062086502038
+        },
+        {
+          "task": "pet",
+          "epoch": 20,
+          "successes": 12,
+          "trials": 30,
+          "success_rate": 0.4,
+          "Loss": -0.02562894804403186,
+          "Off_Manifold_Norm_PolicyReference": -0.1934667661401963,
+          "MSE_mean_pred": -0.04035722091794014,
+          "SurVAL": 0.9970493376773741
+        },
+        {
+          "task": "pet",
+          "epoch": 25,
+          "successes": 14,
+          "trials": 30,
+          "success_rate": 0.4666666666666667,
+          "Loss": -0.0317832965310663,
+          "Off_Manifold_Norm_PolicyReference": -0.19124530557948147,
+          "MSE_mean_pred": -0.04110841453075409,
+          "SurVAL": 0.9976609615581727
+        },
+        {
+          "task": "pet",
+          "epoch": 30,
+          "successes": 15,
+          "trials": 30,
+          "success_rate": 0.5,
+          "Loss": -0.02957350343465805,
+          "Off_Manifold_Norm_PolicyReference": -0.18870164179217858,
+          "MSE_mean_pred": -0.04133595526218414,
+          "SurVAL": 0.9978473359647585
+        },
+        {
+          "task": "pet",
+          "epoch": 35,
+          "successes": 9,
+          "trials": 30,
+          "success_rate": 0.3,
+          "Loss": -0.03700800932943821,
+          "Off_Manifold_Norm_PolicyReference": -0.18964383503382143,
+          "MSE_mean_pred": -0.041335828602313995,
+          "SurVAL": 0.9973666187179062
+        },
+        {
+          "task": "pet",
+          "epoch": 40,
+          "successes": 11,
+          "trials": 30,
+          "success_rate": 0.36666666666666664,
+          "Loss": -0.0381337951309979,
+          "Off_Manifold_Norm_PolicyReference": -0.18767076712274103,
+          "MSE_mean_pred": -0.042108204215765,
+          "SurVAL": 0.9954716261720052
+        },
+        {
+          "task": "pet",
+          "epoch": 45,
+          "successes": 15,
+          "trials": 30,
+          "success_rate": 0.5,
+          "Loss": -0.04090976714156568,
+          "Off_Manifold_Norm_PolicyReference": -0.18492974028948983,
+          "MSE_mean_pred": -0.041501112282276154,
+          "SurVAL": 0.9977441540936831
+        },
+        {
+          "task": "pet",
+          "epoch": 50,
+          "successes": 12,
+          "trials": 30,
+          "success_rate": 0.4,
+          "Loss": -0.04034906953573227,
+          "Off_Manifold_Norm_PolicyReference": -0.18328344267254398,
+          "MSE_mean_pred": -0.041629187762737274,
+          "SurVAL": 0.9977411890261657
+        }
+      ],
+      "zscore": [
+        {
+          "task": "apple",
+          "epoch": 5,
+          "success_rate": -1.286987967375382,
+          "Loss": 1.7137414798206152,
+          "Off_Manifold_Norm_PolicyReference": -2.8288176878172755,
+          "MSE_mean_pred": 2.348503610081748,
+          "SurVAL": -2.1973542933637824
+        },
+        {
+          "task": "apple",
+          "epoch": 10,
+          "success_rate": -1.7466265271523034,
+          "Loss": 1.3708635171496097,
+          "Off_Manifold_Norm_PolicyReference": 0.11013438952791257,
+          "MSE_mean_pred": 1.0054791405798904,
+          "SurVAL": -1.0178222966326127
+        },
+        {
+          "task": "apple",
+          "epoch": 15,
+          "success_rate": -0.597530127709999,
+          "Loss": 0.6841925091057298,
+          "Off_Manifold_Norm_PolicyReference": 0.244513335525751,
+          "MSE_mean_pred": 0.2954992375038529,
+          "SurVAL": -0.45353504097824904
+        },
+        {
+          "task": "apple",
+          "epoch": 20,
+          "success_rate": -0.597530127709999,
+          "Loss": 0.1504205543861423,
+          "Off_Manifold_Norm_PolicyReference": 0.20564596369286062,
+          "MSE_mean_pred": -0.03798931390034047,
+          "SurVAL": -0.13150755598769978
+        },
+        {
+          "task": "apple",
+          "epoch": 25,
+          "success_rate": 0.0919277119553834,
+          "Loss": 0.06286253947317019,
+          "Off_Manifold_Norm_PolicyReference": 0.45212556292099615,
+          "MSE_mean_pred": -0.33971089972324525,
+          "SurVAL": 0.09745514253090334
+        },
+        {
+          "task": "apple",
+          "epoch": 30,
+          "success_rate": 0.7813855516207658,
+          "Loss": -0.4143965015890523,
+          "Off_Manifold_Norm_PolicyReference": 0.411373457652318,
+          "MSE_mean_pred": -0.4486452482727293,
+          "SurVAL": 0.4057771431382563
+        },
+        {
+          "task": "apple",
+          "epoch": 35,
+          "success_rate": 0.7813855516207658,
+          "Loss": -0.4411800389541827,
+          "Off_Manifold_Norm_PolicyReference": 0.38521652554693075,
+          "MSE_mean_pred": -0.5355977380652702,
+          "SurVAL": 0.6987691408105253
+        },
+        {
+          "task": "apple",
+          "epoch": 40,
+          "success_rate": 1.0112048315092266,
+          "Loss": -0.901267951981532,
+          "Off_Manifold_Norm_PolicyReference": 0.4164380426336675,
+          "MSE_mean_pred": -0.6634406467824608,
+          "SurVAL": 0.8661588555630182
+        },
+        {
+          "task": "apple",
+          "epoch": 45,
+          "success_rate": 0.551566271732305,
+          "Loss": -0.9810128663233534,
+          "Off_Manifold_Norm_PolicyReference": 0.3569024328366507,
+          "MSE_mean_pred": -0.7066269799061445,
+          "SurVAL": 0.864090862498839
+        },
+        {
+          "task": "apple",
+          "epoch": 50,
+          "success_rate": 1.0112048315092266,
+          "Loss": -1.2442232410871448,
+          "Off_Manifold_Norm_PolicyReference": 0.24646797748016985,
+          "MSE_mean_pred": -0.9174711615152982,
+          "SurVAL": 0.8679680424208028
+        },
+        {
+          "task": "pan",
+          "epoch": 5,
+          "success_rate": -0.21452908258025843,
+          "Loss": 1.4384312936321468,
+          "Off_Manifold_Norm_PolicyReference": -2.8298400684039806,
+          "MSE_mean_pred": 1.8337370053578075,
+          "SurVAL": 0.341394351353305
+        },
+        {
+          "task": "pan",
+          "epoch": 10,
+          "success_rate": -1.2871744954815496,
+          "Loss": 1.1461663224168526,
+          "Off_Manifold_Norm_PolicyReference": 0.13448833574166538,
+          "MSE_mean_pred": 1.5684748488488116,
+          "SurVAL": -1.4714377490604318
+        },
+        {
+          "task": "pan",
+          "epoch": 15,
+          "success_rate": -0.5720775535473557,
+          "Loss": 0.7708574198571209,
+          "Off_Manifold_Norm_PolicyReference": 0.5041752516141662,
+          "MSE_mean_pred": 0.5808850526367588,
+          "SurVAL": -1.8493264825168743
+        },
+        {
+          "task": "pan",
+          "epoch": 20,
+          "success_rate": -0.5720775535473557,
+          "Loss": 0.47119195044217366,
+          "Off_Manifold_Norm_PolicyReference": 0.2925735750027513,
+          "MSE_mean_pred": -0.17921854385198724,
+          "SurVAL": -0.6431137643038257
+        },
+        {
+          "task": "pan",
+          "epoch": 25,
+          "success_rate": -0.5720775535473557,
+          "Loss": 0.03905837737109974,
+          "Off_Manifold_Norm_PolicyReference": 0.2570754800513074,
+          "MSE_mean_pred": -0.11883331134121654,
+          "SurVAL": -0.15873358300412832
+        },
+        {
+          "task": "pan",
+          "epoch": 30,
+          "success_rate": 2.288310214189421,
+          "Loss": 0.03162880563056105,
+          "Off_Manifold_Norm_PolicyReference": 0.28364697883652745,
+          "MSE_mean_pred": -0.5248576858970415,
+          "SurVAL": 0.7562434455061977
+        },
+        {
+          "task": "pan",
+          "epoch": 35,
+          "success_rate": -0.21452908258025843,
+          "Loss": -0.3639824753447202,
+          "Off_Manifold_Norm_PolicyReference": 0.22773147128446958,
+          "MSE_mean_pred": -0.7908416759751906,
+          "SurVAL": 0.7562434455061977
+        },
+        {
+          "task": "pan",
+          "epoch": 40,
+          "success_rate": 0.8581163303210325,
+          "Loss": -0.6475001326957585,
+          "Off_Manifold_Norm_PolicyReference": 0.42917372318146546,
+          "MSE_mean_pred": -0.762951802246643,
+          "SurVAL": 0.7562434455061977
+        },
+        {
+          "task": "pan",
+          "epoch": 45,
+          "success_rate": -0.21452908258025843,
+          "Loss": -1.2396526397787695,
+          "Off_Manifold_Norm_PolicyReference": 0.4045608290533601,
+          "MSE_mean_pred": -0.702264053725499,
+          "SurVAL": 0.7562434455061977
+        },
+        {
+          "task": "pan",
+          "epoch": 50,
+          "success_rate": 0.5005678593539356,
+          "Loss": -1.6461989215307038,
+          "Off_Manifold_Norm_PolicyReference": 0.2964144236382931,
+          "MSE_mean_pred": -0.9041298338057999,
+          "SurVAL": 0.7562434455061977
+        },
+        {
+          "task": "pet",
+          "epoch": 5,
+          "success_rate": -2.2819679331485334,
+          "Loss": 1.433434323239329,
+          "Off_Manifold_Norm_PolicyReference": -2.72556804976134,
+          "MSE_mean_pred": 2.1012839571394495,
+          "SurVAL": -2.781222179989345
+        },
+        {
+          "task": "pet",
+          "epoch": 10,
+          "success_rate": -0.7435625849585109,
+          "Loss": 1.2656792121011662,
+          "Off_Manifold_Norm_PolicyReference": -0.3207826307941726,
+          "MSE_mean_pred": 1.3927626622547995,
+          "SurVAL": -0.1812442501318091
+        },
+        {
+          "task": "pet",
+          "epoch": 15,
+          "success_rate": 0.02564008913650011,
+          "Loss": 0.85952367391492,
+          "Off_Manifold_Norm_PolicyReference": -0.0437170253302499,
+          "MSE_mean_pred": 0.4649029557356382,
+          "SurVAL": 0.15532179779130267
+        },
+        {
+          "task": "pet",
+          "epoch": 20,
+          "success_rate": 0.2820409805015042,
+          "Loss": 0.5599661576190469,
+          "Off_Manifold_Norm_PolicyReference": 0.25391612825128085,
+          "MSE_mean_pred": -0.2393535149468877,
+          "SurVAL": 0.370434976410204
+        },
+        {
+          "task": "pet",
+          "epoch": 25,
+          "success_rate": 0.7948427632315115,
+          "Loss": -0.1593521006399896,
+          "Off_Manifold_Norm_PolicyReference": 0.3364621873404286,
+          "MSE_mean_pred": -0.4888426376291397,
+          "SurVAL": 0.4556957386674432
+        },
+        {
+          "task": "pet",
+          "epoch": 30,
+          "success_rate": 1.0512436545965151,
+          "Loss": 0.09892780089141831,
+          "Off_Manifold_Norm_PolicyReference": 0.4309808229636798,
+          "MSE_mean_pred": -0.5644142831950641,
+          "SurVAL": 0.481676450784167
+        },
+        {
+          "task": "pet",
+          "epoch": 35,
+          "success_rate": -0.48716169359350725,
+          "Loss": -0.7700148406434464,
+          "Off_Manifold_Norm_PolicyReference": 0.395970370663316,
+          "MSE_mean_pred": -0.5643722164637406,
+          "SurVAL": 0.41466415747195956
+        },
+        {
+          "task": "pet",
+          "epoch": 40,
+          "success_rate": 0.02564008913650011,
+          "Loss": -0.901596320576976,
+          "Off_Manifold_Norm_PolicyReference": 0.4692865407791313,
+          "MSE_mean_pred": -0.8208963813314518,
+          "SurVAL": 0.1505009780939062
+        },
+        {
+          "task": "pet",
+          "epoch": 45,
+          "success_rate": 1.0512436545965151,
+          "Loss": -1.226051030254888,
+          "Off_Manifold_Norm_PolicyReference": 0.5711388837573403,
+          "MSE_mean_pred": -0.6192668263273445,
+          "SurVAL": 0.4672928316103559
+        },
+        {
+          "task": "pet",
+          "epoch": 50,
+          "success_rate": 0.2820409805015042,
+          "Loss": -1.1605168756505804,
+          "Off_Manifold_Norm_PolicyReference": 0.6323127721305848,
+          "MSE_mean_pred": -0.6618037152362588,
+          "SurVAL": 0.4668794992918928
+        }
+      ],
+      "metrics": {
+        "Loss": {
+          "nregret": 0.8444444444422808,
+          "mmrv": 0.3011111111111111,
+          "spearman": -0.7004659272862394,
+          "balanced_loss": 0.8210748055441363,
+          "regret_pp": 33.333333333333336,
+          "selected_success_rate": 0.2111111111111111
+        },
+        "Off_Manifold_Norm_PolicyReference": {
+          "nregret": 0.4547008546995994,
+          "mmrv": 0.11222222222222222,
+          "spearman": 0.5272078232721212,
+          "balanced_loss": 0.33070752802972664,
+          "regret_pp": 16.666666666666668,
+          "selected_success_rate": 0.37777777777777777
+        },
+        "MSE_mean_pred": {
+          "nregret": 0.8444444444422808,
+          "mmrv": 0.3011111111111111,
+          "spearman": -0.6923106401371552,
+          "balanced_loss": 0.819715591019289,
+          "regret_pp": 33.333333333333336,
+          "selected_success_rate": 0.2111111111111111
+        },
+        "SurVAL": {
+          "nregret": 0.0,
+          "mmrv": 0.05333333333333334,
+          "spearman": 0.9010583223617212,
+          "balanced_loss": 0.06493757305367324,
+          "regret_pp": 0.0,
+          "selected_success_rate": 0.5444444444444444
+        }
+      },
+      "checkpoint": "epoch",
+      "steps": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50
+      ],
+      "legend": [
+        "apple",
+        "pan",
+        "pet"
+      ],
+      "tasks": {
+        "apple": {
+          "name": "PnP Apple",
+          "color": "#4285F4",
+          "marker": "square"
+        },
+        "pan": {
+          "name": "Put Pan on Stove",
+          "color": "#EA4335",
+          "marker": "triangle"
+        },
+        "pet": {
+          "name": "Put Pet on Shelf",
+          "color": "#34A853",
+          "marker": "diamond"
+        }
+      },
+      "axes": {
+        "xlim": [
+          -3.5,
+          3.0
+        ],
+        "ylim": [
+          -3.0,
+          5.5
+        ]
+      },
+      "method_keys": {
+        "race": "SurVAL",
+        "loss": "Loss",
+        "mse": "MSE_mean_pred",
+        "omn": "Off_Manifold_Norm_PolicyReference"
+      },
+      "task_metrics": {
+        "apple": {
+          "Loss": {
+            "spearman": -0.8991204081865278,
+            "mmrv": 0.3333333333333333,
+            "nregret": 0.83333333333125
+          },
+          "Off_Manifold_Norm_PolicyReference": {
+            "spearman": 0.7033935166085081,
+            "mmrv": 0.07999999999999999,
+            "nregret": 0.3333333333325
+          },
+          "MSE_mean_pred": {
+            "spearman": -0.8991204081865278,
+            "mmrv": 0.3333333333333333,
+            "nregret": 0.83333333333125
+          },
+          "SurVAL": {
+            "spearman": 0.9419356657192196,
+            "mmrv": 0.023333333333333327,
+            "nregret": 0.0
+          }
+        },
+        "pan": {
+          "Loss": {
+            "spearman": -0.6150966989381312,
+            "mmrv": 0.22666666666666666,
+            "nregret": 0.6999999999979
+          },
+          "Off_Manifold_Norm_PolicyReference": {
+            "spearman": 0.22988462485566521,
+            "mmrv": 0.16000000000000003,
+            "nregret": 0.7999999999976001
+          },
+          "MSE_mean_pred": {
+            "spearman": -0.6150966989381312,
+            "mmrv": 0.22666666666666666,
+            "nregret": 0.6999999999979
+          },
+          "SurVAL": {
+            "spearman": 0.8682353585412291,
+            "mmrv": 0.09000000000000001,
+            "nregret": 0.0
+          }
+        },
+        "pet": {
+          "Loss": {
+            "spearman": -0.587180674734059,
+            "mmrv": 0.3433333333333334,
+            "nregret": 0.9999999999976924
+          },
+          "Off_Manifold_Norm_PolicyReference": {
+            "spearman": 0.6483453283521902,
+            "mmrv": 0.09666666666666668,
+            "nregret": 0.23076923076869818
+          },
+          "MSE_mean_pred": {
+            "spearman": -0.5627148132868065,
+            "mmrv": 0.3433333333333334,
+            "nregret": 0.9999999999976924
+          },
+          "SurVAL": {
+            "spearman": 0.8930039428247147,
+            "mmrv": 0.04666666666666667,
+            "nregret": 0.0
+          }
+        }
+      }
+    }
+  },
+  "simulation": [
+    {
+      "name": "Held-out Demos",
+      "methods": {
+        "race": {
+          "hit1": {
+            "mean": 0.44,
+            "lower": 0.23,
+            "upper": 0.65
+          },
+          "hit3": {
+            "mean": 0.75,
+            "lower": 0.59,
+            "upper": 0.9
+          },
+          "hit5": {
+            "mean": 0.95,
+            "lower": 0.88,
+            "upper": 1.0
+          },
+          "spearman": {
+            "mean": 0.83,
+            "lower": 0.72,
+            "upper": 0.92
+          },
+          "mmrv": {
+            "mean": 0.03,
+            "lower": 0.012,
+            "upper": 0.053
+          },
+          "nregret": {
+            "mean": 0.082,
+            "lower": 0.035,
+            "upper": 0.142
+          }
+        },
+        "loss": {
+          "hit1": {
+            "mean": 0.31,
+            "lower": 0.12,
+            "upper": 0.53
+          },
+          "hit3": {
+            "mean": 0.59,
+            "lower": 0.33,
+            "upper": 0.82
+          },
+          "hit5": {
+            "mean": 0.75,
+            "lower": 0.49,
+            "upper": 0.97
+          },
+          "spearman": {
+            "mean": 0.52,
+            "lower": 0.01,
+            "upper": 0.93
+          },
+          "mmrv": {
+            "mean": 0.042,
+            "lower": 0.011,
+            "upper": 0.088
+          },
+          "nregret": {
+            "mean": 0.238,
+            "lower": 0.03,
+            "upper": 0.504
+          }
+        },
+        "mse": {
+          "hit1": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "hit3": {
+            "mean": 0.08,
+            "lower": 0.0,
+            "upper": 0.17
+          },
+          "hit5": {
+            "mean": 0.2,
+            "lower": 0.04,
+            "upper": 0.4
+          },
+          "spearman": {
+            "mean": -0.22,
+            "lower": -0.62,
+            "upper": 0.2
+          },
+          "mmrv": {
+            "mean": 0.122,
+            "lower": 0.068,
+            "upper": 0.18
+          },
+          "nregret": {
+            "mean": 0.495,
+            "lower": 0.325,
+            "upper": 0.66
+          }
+        },
+        "omn": {
+          "hit1": {
+            "mean": 0.25,
+            "lower": 0.11,
+            "upper": 0.4
+          },
+          "hit3": {
+            "mean": 0.54,
+            "lower": 0.33,
+            "upper": 0.74
+          },
+          "hit5": {
+            "mean": 0.72,
+            "lower": 0.46,
+            "upper": 0.94
+          },
+          "spearman": {
+            "mean": 0.6,
+            "lower": 0.22,
+            "upper": 0.87
+          },
+          "mmrv": {
+            "mean": 0.042,
+            "lower": 0.022,
+            "upper": 0.067
+          },
+          "nregret": {
+            "mean": 0.146,
+            "lower": 0.052,
+            "upper": 0.288
+          }
+        }
+      }
+    },
+    {
+      "name": "Rollouts",
+      "methods": {
+        "race": {
+          "hit1": {
+            "mean": 0.27,
+            "lower": 0.12,
+            "upper": 0.45
+          },
+          "hit3": {
+            "mean": 0.62,
+            "lower": 0.38,
+            "upper": 0.83
+          },
+          "hit5": {
+            "mean": 0.9,
+            "lower": 0.77,
+            "upper": 1.0
+          },
+          "spearman": {
+            "mean": 0.79,
+            "lower": 0.69,
+            "upper": 0.88
+          },
+          "mmrv": {
+            "mean": 0.034,
+            "lower": 0.021,
+            "upper": 0.047
+          },
+          "nregret": {
+            "mean": 0.113,
+            "lower": 0.049,
+            "upper": 0.186
+          }
+        },
+        "loss": {
+          "hit1": {
+            "mean": 0.03,
+            "lower": 0.0,
+            "upper": 0.1
+          },
+          "hit3": {
+            "mean": 0.12,
+            "lower": 0.02,
+            "upper": 0.27
+          },
+          "hit5": {
+            "mean": 0.15,
+            "lower": 0.03,
+            "upper": 0.3
+          },
+          "spearman": {
+            "mean": -0.1,
+            "lower": -0.45,
+            "upper": 0.25
+          },
+          "mmrv": {
+            "mean": 0.136,
+            "lower": 0.086,
+            "upper": 0.19
+          },
+          "nregret": {
+            "mean": 0.402,
+            "lower": 0.298,
+            "upper": 0.514
+          }
+        },
+        "mse": {
+          "hit1": {
+            "mean": 0.08,
+            "lower": 0.02,
+            "upper": 0.18
+          },
+          "hit3": {
+            "mean": 0.22,
+            "lower": 0.05,
+            "upper": 0.4
+          },
+          "hit5": {
+            "mean": 0.3,
+            "lower": 0.12,
+            "upper": 0.5
+          },
+          "spearman": {
+            "mean": -0.06,
+            "lower": -0.27,
+            "upper": 0.16
+          },
+          "mmrv": {
+            "mean": 0.129,
+            "lower": 0.084,
+            "upper": 0.177
+          },
+          "nregret": {
+            "mean": 0.48,
+            "lower": 0.343,
+            "upper": 0.633
+          }
+        },
+        "omn": {
+          "hit1": {
+            "mean": 0.17,
+            "lower": 0.07,
+            "upper": 0.27
+          },
+          "hit3": {
+            "mean": 0.37,
+            "lower": 0.23,
+            "upper": 0.5
+          },
+          "hit5": {
+            "mean": 0.55,
+            "lower": 0.42,
+            "upper": 0.68
+          },
+          "spearman": {
+            "mean": 0.53,
+            "lower": 0.39,
+            "upper": 0.66
+          },
+          "mmrv": {
+            "mean": 0.068,
+            "lower": 0.047,
+            "upper": 0.094
+          },
+          "nregret": {
+            "mean": 0.164,
+            "lower": 0.123,
+            "upper": 0.207
+          }
+        }
+      }
+    },
+    {
+      "name": "Noised Rollouts",
+      "methods": {
+        "race": {
+          "hit1": {
+            "mean": 0.32,
+            "lower": 0.19,
+            "upper": 0.49
+          },
+          "hit3": {
+            "mean": 0.69,
+            "lower": 0.52,
+            "upper": 0.85
+          },
+          "hit5": {
+            "mean": 0.91,
+            "lower": 0.81,
+            "upper": 0.99
+          },
+          "spearman": {
+            "mean": 0.78,
+            "lower": 0.68,
+            "upper": 0.86
+          },
+          "mmrv": {
+            "mean": 0.035,
+            "lower": 0.021,
+            "upper": 0.053
+          },
+          "nregret": {
+            "mean": 0.081,
+            "lower": 0.053,
+            "upper": 0.116
+          }
+        },
+        "loss": {
+          "hit1": {
+            "mean": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "hit3": {
+            "mean": 0.04,
+            "lower": 0.0,
+            "upper": 0.11
+          },
+          "hit5": {
+            "mean": 0.09,
+            "lower": 0.01,
+            "upper": 0.19
+          },
+          "spearman": {
+            "mean": -0.47,
+            "lower": -0.68,
+            "upper": -0.15
+          },
+          "mmrv": {
+            "mean": 0.154,
+            "lower": 0.105,
+            "upper": 0.202
+          },
+          "nregret": {
+            "mean": 0.613,
+            "lower": 0.462,
+            "upper": 0.773
+          }
+        },
+        "mse": {
+          "hit1": {
+            "mean": 0.09,
+            "lower": 0.0,
+            "upper": 0.21
+          },
+          "hit3": {
+            "mean": 0.29,
+            "lower": 0.11,
+            "upper": 0.49
+          },
+          "hit5": {
+            "mean": 0.39,
+            "lower": 0.17,
+            "upper": 0.61
+          },
+          "spearman": {
+            "mean": 0.3,
+            "lower": -0.05,
+            "upper": 0.61
+          },
+          "mmrv": {
+            "mean": 0.083,
+            "lower": 0.041,
+            "upper": 0.13
+          },
+          "nregret": {
+            "mean": 0.288,
+            "lower": 0.148,
+            "upper": 0.443
+          }
+        },
+        "omn": {
+          "hit1": {
+            "mean": 0.06,
+            "lower": 0.01,
+            "upper": 0.14
+          },
+          "hit3": {
+            "mean": 0.31,
+            "lower": 0.16,
+            "upper": 0.47
+          },
+          "hit5": {
+            "mean": 0.42,
+            "lower": 0.25,
+            "upper": 0.59
+          },
+          "spearman": {
+            "mean": 0.3,
+            "lower": 0.05,
+            "upper": 0.52
+          },
+          "mmrv": {
+            "mean": 0.085,
+            "lower": 0.055,
+            "upper": 0.122
+          },
+          "nregret": {
+            "mean": 0.276,
+            "lower": 0.185,
+            "upper": 0.405
+          }
+        }
+      }
+    }
+  ]
+}

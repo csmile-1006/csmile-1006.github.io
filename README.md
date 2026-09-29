@@ -22,7 +22,7 @@ Visit <http://localhost:8000>. Stop the server with Ctrl+C. This read-only serve
 | Site-wide CMU red palette, including project pages | `assets/css/theme.css` |
 | Profile photo / CV | `assets/img/changyeon.jpg` / `assets/pdf/changyeon_cv.pdf` |
 | Downloadable bibliography | `assets/bibliography/papers.bib`, `assets/bibliography/others.bib` |
-| Research project pages | `deas/`, `reds/`, `accrue/` |
+| Research project pages | `deas/`, `reds/`, `accrue/`, `race/` |
 
 When replacing `assets/pdf/changyeon_cv.pdf`, also update the `v` query value in the CV links in `index.html` and `background/index.html` to the first 12 characters of the new file's SHA-256 hash. This makes browsers fetch the replacement instead of reusing a cached PDF.
 
@@ -56,7 +56,7 @@ The artifact contains root HTML, shared assets, domain/SEO files, and every top-
 
 ## Migration notes
 
-All 13 original publications and 10 news items were retained. The September 25, 2026 CV adds ACCRUE, RACE, and Trust Region Q Adjoint Matching, bringing the total to 16. Seven representative papers appear on the homepage; All opens the complete publication page. ACCRUE and RACE are marked under review at ICRA 2027. ACCRUE links to its project page and PDF; RACE remains available upon request.
+All 13 original publications and 10 news items were retained. The September 25, 2026 CV adds ACCRUE, RACE, and Trust Region Q Adjoint Matching, bringing the total to 16. Seven representative papers appear on the homepage; All opens the complete publication page. ACCRUE and RACE are marked under review at ICRA 2027. ACCRUE and RACE link to their project pages and PDFs.
 
 The homepage contains only the introduction and selected papers. The research introduction is condensed to two sentences. Other profile details live in `background/index.html`; news remains in its own archive. Oral, spotlight, and fellowship distinctions use the shared red `.highlight` style. Education, NVIDIA/UT Austin dates, reviewer years, mentoring, and the downloadable CV are updated from that CV. Older IBS experience, awards, and the invited talk remain even where the new CV omits them. Existing `/publications/`, `/news/`, publication anchors, `/deas/`, and `/reds/` URLs remain available.
 

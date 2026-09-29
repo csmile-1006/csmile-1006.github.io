@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.819 --> 00:00:06.634
+Finally, compare Race scores with checkpoint success
+rates measured through repeated robot trials.
+
+2
+00:00:06.634 --> 00:00:10.213
+Across checkpoints, the two curves follow similar
+trends.
+
+3
+00:00:10.213 --> 00:00:18.265
+Race captures these performance differences using
+held-out demonstrations collected in advance, without
+running each candidate on the robot.
