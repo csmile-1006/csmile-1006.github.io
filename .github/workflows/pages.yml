@@ -1,0 +1,57 @@
+name: Deploy static site
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check pages and local links
+        run: python3 scripts/check_site.py
+      - name: Prepare public files
+        run: |
+          mkdir _site
+          cp -R assets _site/
+          cp *.html CNAME .nojekyll robots.txt sitemap.xml _site/
+          for page in */index.html; do
+            directory="${page%/index.html}"
+            case "$directory" in .*|_*|assets) continue ;; esac
+            cp -R "$directory" _site/
+          done
+      - name: Check deployment files
+        run: python3 scripts/check_site.py _site
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
