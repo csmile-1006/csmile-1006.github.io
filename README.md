@@ -24,6 +24,8 @@ Visit <http://localhost:8000>. Stop the server with Ctrl+C. This read-only serve
 | Downloadable bibliography | `assets/bibliography/papers.bib`, `assets/bibliography/others.bib` |
 | Research project pages | `deas/`, `reds/`, `accrue/` |
 
+When replacing `assets/pdf/changyeon_cv.pdf`, also update the `v` query value in the CV links in `index.html` and `background/index.html` to the first 12 characters of the new file's SHA-256 hash. This makes browsers fetch the replacement instead of reusing a cached PDF.
+
 Copy an existing `<li class="publication">` to add a paper. Keep its `id` equal to its BibTeX key, and update the downloadable bibliography as well. These HTML files are the pages themselves; nothing renders them from BibTeX. The homepage shows the seven entries marked `selected={true}` in `papers.bib`. To change the selection, update that flag and the matching publication block in `index.html`; adjust relative resource links when copying between pages. The checker verifies that selected papers match the full list. The Selected / All controls are ordinary page links, so they also work without JavaScript.
 
 Add news to `news/index.html` in reverse chronological order. News and background details are linked from the homepage footer. Relative links from those pages need `../` (for example, `../deas/` instead of `deas/`).
