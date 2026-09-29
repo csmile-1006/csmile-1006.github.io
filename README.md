@@ -5,10 +5,10 @@ A static academic website inspired by the simple layout of [younggyo.me](https:/
 ## Local preview
 
 ```sh
-python3 -m http.server 8000 --bind 127.0.0.1
+python3 scripts/serve.py
 ```
 
-Visit <http://localhost:8000>. Stop the server with Ctrl+C. Python is only a convenient local server and checker; it is not required to host the site.
+Visit <http://localhost:8000>. Stop the server with Ctrl+C. This read-only server uses Python's standard library and supports HTTP byte ranges, so video seeking and ACCRUE's chapter buttons work locally. Python is only used for local preview and checks; it is not required to host the site. Run `python3 scripts/check_preview.py` to check the server.
 
 ## Edit
 
