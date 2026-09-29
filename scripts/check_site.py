@@ -46,7 +46,9 @@ class Page(HTMLParser):
         self.publications, self.news = {}, []
         source = path.read_text(encoding="utf-8")
         assert not source.lstrip().startswith("---"), f"{path}: YAML frontmatter remains"
-        assert "{{" not in source and "{%" not in source, f"{path}: Liquid remains"
+        # Project pages can contain literal BibTeX braces or JavaScript templates.
+        if not allow_scripts:
+            assert "{{" not in source and "{%" not in source, f"{path}: Liquid remains"
         self.feed(source)
 
     def handle_starttag(self, tag, attrs):

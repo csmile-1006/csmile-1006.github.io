@@ -22,7 +22,7 @@ Visit <http://localhost:8000>. Stop the server with Ctrl+C. Python is only a con
 | Site-wide CMU red palette, including project pages | `assets/css/theme.css` |
 | Profile photo / CV | `assets/img/changyeon.jpg` / `assets/pdf/changyeon_cv.pdf` |
 | Downloadable bibliography | `assets/bibliography/papers.bib`, `assets/bibliography/others.bib` |
-| Research project pages | `deas/`, `reds/` |
+| Research project pages | `deas/`, `reds/`, `accrue/` |
 
 Copy an existing `<li class="publication">` to add a paper. Keep its `id` equal to its BibTeX key, and update the downloadable bibliography as well. These HTML files are the pages themselves; nothing renders them from BibTeX. The homepage shows the seven entries marked `selected={true}` in `papers.bib`. To change the selection, update that flag and the matching publication block in `index.html`; adjust relative resource links when copying between pages. The checker verifies that selected papers match the full list. The Selected / All controls are ordinary page links, so they also work without JavaScript.
 
@@ -35,6 +35,8 @@ python3 scripts/check_site.py
 ```
 
 ## Add a project page
+
+ACCRUE is published at <https://changyeon.site/accrue/> and can be previewed at <http://localhost:8000/accrue/>. Its static files were imported from [csmile-1006/accrue_webpage](https://github.com/csmile-1006/accrue_webpage) at `09ce10b929b82e368365c5798c7697a5546589ad`, including the paper, videos, data, and font license. It retains its original project design. Edit its HTML/CSS/JS and `content-overrides.json` directly; the source repository's editing server is not included. The homepage and full publication list link to both the project and its PDF.
 
 Create a folder such as `new-project/` containing `index.html` and its media. It is immediately available at `http://localhost:8000/new-project/`; no router, registration, build, or new dependency is needed. Keep each project's images/videos inside its own folder and use relative URLs.
 
@@ -52,7 +54,7 @@ The artifact contains root HTML, shared assets, domain/SEO files, and every top-
 
 ## Migration notes
 
-All 13 original publications and 10 news items were retained. The September 25, 2026 CV adds ACCRUE, RACE, and Trust Region Q Adjoint Matching, bringing the total to 16. Seven representative papers appear on the homepage; All opens the complete publication page. ACCRUE and RACE are marked under review at ICRA 2027 and available upon request, with no invented paper URLs.
+All 13 original publications and 10 news items were retained. The September 25, 2026 CV adds ACCRUE, RACE, and Trust Region Q Adjoint Matching, bringing the total to 16. Seven representative papers appear on the homepage; All opens the complete publication page. ACCRUE and RACE are marked under review at ICRA 2027. ACCRUE links to its project page and PDF; RACE remains available upon request.
 
 The homepage contains only the introduction and selected papers. The research introduction is condensed to two sentences. Other profile details live in `background/index.html`; news remains in its own archive. Oral, spotlight, and fellowship distinctions use the shared red `.highlight` style. Education, NVIDIA/UT Austin dates, reviewer years, mentoring, and the downloadable CV are updated from that CV. Older IBS experience, awards, and the invited talk remain even where the new CV omits them. Existing `/publications/`, `/news/`, publication anchors, `/deas/`, and `/reds/` URLs remain available.
 

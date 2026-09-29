@@ -1,0 +1,55 @@
+ACCRUE — English narration transcript
+
+[00:00:00]
+ACCRUE: Continual Off-Policy Reinforcement Learning for Robot Foundation Models.
+
+[00:00:06]
+Single-task RL learns each task from scratch, repeating costly robot interaction. ACCRUE carries that experience forward to learn new tasks faster.
+
+[00:00:18]
+Accumulated demonstrations update the foundation model. During RL, a compact actor–critic refines the frozen model’s references into proposed actions. Both networks carry forward.
+
+[00:00:30]
+With limited prior replay, adapting the critic can make earlier-task values unreliable. In ACCRUE, it guides only current-task actor updates. Before RL, we cache previous actor outputs; during training, we distill those targets.
+
+[00:00:45]
+Simulation benchmarks pair GR00T with FastSAC: FORGE covers peg, gear, and nut assembly; AutoMate covers plug-and-socket assembly.
+
+[00:00:55]
+We learn peg insertion, gear meshing, then nut threading. The final policy revisits earlier tasks.
+
+[00:01:03]
+Forward transfer measures learning-curve area. Demonstration-only is supervised fine-tuning. Single-task RL starts fresh. ACCRUE carries experience forward and achieves higher forward transfer.
+
+[00:01:17]
+We compare sequential learning, weight regularization, actor blending, and experience replay.
+
+[00:01:23]
+Only ACCRUE succeeds at peg insertion in this matched example.
+
+[00:01:28]
+Across these examples, only ACCRUE succeeds at both earlier tasks.
+
+[00:01:34]
+Negative backward transfer measures average earlier-task success loss. ACCRUE forgets less. It also achieves higher final success across the full task sequence.
+
+[00:01:44]
+Real robots pair pi-zero-point-five with FastTD3.
+
+[00:01:49]
+Here, we compare single-task RL with ACCRUE on five successive AutoMate assemblies. ACCRUE supports different foundation models and off-policy actor–critic algorithms. Both methods are stopped at ninety-five percent success over the latest twenty episodes. Blue curves show single-task RL; the horizontal axis measures robot interaction time.
+
+[00:02:11]
+For subsequent tasks, ACCRUE needs thirty-one to sixty-eight point five percent less robot interaction than single-task RL.
+
+[00:02:22]
+After all five tasks, separate evaluations show ninety-five to one hundred percent success on earlier assemblies.
+
+[00:02:31]
+The NIST tasks test a separate sequence: rectangular peg insertion, cylindrical peg insertion, then gear meshing. Blue curves again show single-task learning.
+
+[00:02:43]
+ACCRUE needs roughly forty percent less robot interaction.
+
+[00:02:48]
+After gear meshing, both earlier insertion skills remain. See our paper for ablations of inheritance and replay.

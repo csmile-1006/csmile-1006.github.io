@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "text": {
+    "hero.description": "ACCRUE enables robot foundation models to learn new tasks faster through off-policy RL while retaining previously learned skills.",
+    "results.title": "Real-world learning",
+    "results.description": "ACCRUE vs. single-task RL",
+    "highlights.automate.label": "less robot interaction",
+    "highlights.automate.scope": "AutoMate · new tasks vs. single-task RL",
+    "highlights.nist.label": "less robot interaction",
+    "highlights.nist.scope": "NIST · new tasks vs. single-task RL",
+    "highlights.retention.label": "mean final prior-task success",
+    "highlights.retention.scope": "118 / 120 trials · 6 prior tasks",
+    "citation.title": "BibTeX"
+  },
+  "links": {}
+}
