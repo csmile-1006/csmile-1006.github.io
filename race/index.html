@@ -87,7 +87,7 @@
 
       <section class="method-section ruled" id="method" aria-labelledby="method-title">
         <div class="wrap section">
-          <div class="section-heading"><h2 id="method-title">Lower error can still mean failure</h2><p>One fatal mistake can hide behind a low average error. Larger, recoverable deviations can still succeed.</p></div>
+          <div class="section-heading"><h2 id="method-title">Pitfalls of average prediction error</h2><p>Averaging action errors can obscure task-critical deviations: error magnitude alone does not capture their effect on success. It also counts predictions at later reference states even after a fatal deviation, although the robot may never reach those states.</p></div>
           <figure class="intuition-figure"><img src="assets/motivation.webp" width="2400" height="661" loading="lazy" alt="Counterexample: Policy A has lower average prediction error but fails after one fatal deviation; Policy B deviates more but succeeds."><figcaption><a class="text-link" href="assets/motivation.webp" target="_blank" rel="noopener">View example at full size</a></figcaption></figure>
           <h3 class="subsection-title">How RACE scores a checkpoint</h3>
           <div class="method-grid">
