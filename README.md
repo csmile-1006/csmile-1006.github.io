@@ -28,6 +28,8 @@ When replacing `assets/pdf/changyeon_cv.pdf`, also update the `v` query value in
 
 Copy an existing `<li class="publication">` to add a paper. Keep its `id` equal to its BibTeX key, and update the downloadable bibliography as well. These HTML files are the pages themselves; nothing renders them from BibTeX. The homepage shows the seven entries marked `selected={true}` in `papers.bib`. To change the selection, update that flag and the matching publication block in `index.html`; adjust relative resource links when copying between pages. The checker verifies that selected papers match the full list. The Selected / All controls are ordinary page links, so they also work without JavaScript.
 
+Workshop venue formatting intentionally differs: the website uses `<conference acronym> <year> <topic> Workshop` (for example, `NeurIPS 2026 Robot Learning Workshop`), while the CV uses `NeurIPS 2026 Workshop on Robot Learning (NeurIPSW)`. Keep publication notes consistent with the website format; in BibTeX `booktitle`, leave the year in its separate `year` field.
+
 Add news to `news/index.html` in reverse chronological order. News and background details are linked from the homepage footer. Relative links from those pages need `../` (for example, `../deas/` instead of `deas/`).
 
 Run the dependency-free check after editing:
