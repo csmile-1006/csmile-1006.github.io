@@ -56,7 +56,7 @@ The artifact contains root HTML, shared assets, domain/SEO files, and every top-
 
 ## Migration notes
 
-All 13 original publications and 10 news items were retained. The September 25, 2026 CV adds ACCRUE, RACE, and Trust Region Q Adjoint Matching, bringing the total to 16. Seven representative papers appear on the homepage; All opens the complete publication page. ACCRUE and RACE are marked under review at ICRA 2027. ACCRUE and RACE link to their project pages and PDFs.
+All 13 original publications and 10 news items were retained. The September 25, 2026 CV adds ACCRUE, RACE, and Trust Region Q Adjoint Matching, bringing the total to 16. Seven representative papers appear on the homepage; All opens the complete publication page. RACE is accepted to the NeurIPS 2026 Robot Learning Workshop; its ICRA 2027 submission status remains listed as a secondary note. ACCRUE remains under review at ICRA 2027. Both papers link to their project pages, and RACE also links to its PDF.
 
 The homepage contains only the introduction and selected papers. The research introduction is condensed to two sentences. Other profile details live in `background/index.html`; news remains in its own archive. Oral, spotlight, and fellowship distinctions use the shared red `.highlight` style. Education, NVIDIA/UT Austin dates, reviewer years, mentoring, and the downloadable CV are updated from that CV. Older IBS experience, awards, and the invited talk remain even where the new CV omits them. Existing `/publications/`, `/news/`, publication anchors, `/deas/`, and `/reds/` URLs remain available.
 
