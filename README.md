@@ -8,7 +8,7 @@ A static academic website inspired by the simple layout of [younggyo.me](https:/
 python3 scripts/serve.py
 ```
 
-Visit <http://localhost:8000>. Stop the server with Ctrl+C. This read-only server uses Python's standard library and supports HTTP byte ranges, so video seeking and ACCRUE's chapter buttons work locally. Python is only used for local preview and checks; it is not required to host the site. Run `python3 scripts/check_preview.py` to check the server.
+Visit <http://localhost:8000>. Stop the server with Ctrl+C. This read-only server uses Python's standard library and supports HTTP byte ranges for video seeking. Python is only used for local preview and checks; it is not required to host the site. Run `python3 scripts/check_preview.py` to check the server.
 
 ## Edit
 
@@ -22,7 +22,7 @@ Visit <http://localhost:8000>. Stop the server with Ctrl+C. This read-only serve
 | Site-wide CMU red palette, including project pages | `assets/css/theme.css` |
 | Profile photo / CV | `assets/img/changyeon.jpg` / `assets/pdf/changyeon_cv.pdf` |
 | Downloadable bibliography | `assets/bibliography/papers.bib`, `assets/bibliography/others.bib` |
-| Research project pages | `deas/`, `reds/`, `accrue/`, `race/` |
+| Research project pages | `deas/`, `reds/`, `race/`; ACCRUE redirect in `accrue/` |
 
 When replacing `assets/pdf/changyeon_cv.pdf`, also update the `v` query value in the CV links in `index.html` and `background/index.html` to the first 12 characters of the new file's SHA-256 hash. This makes browsers fetch the replacement instead of reusing a cached PDF.
 
@@ -40,7 +40,7 @@ python3 scripts/check_site.py
 
 ## Add a project page
 
-ACCRUE is published at <https://changyeon.site/accrue/> and can be previewed at <http://localhost:8000/accrue/>. Its static files were imported from [csmile-1006/accrue_webpage](https://github.com/csmile-1006/accrue_webpage) at `09ce10b929b82e368365c5798c7697a5546589ad`, including the paper, videos, data, and font license. It retains its original project design. Edit its HTML/CSS/JS and `content-overrides.json` directly; the source repository's editing server is not included. The homepage and full publication list link to both the project and its PDF.
+ACCRUE is published at <https://accrue-rl.github.io/>. Edit its HTML/CSS/JS and `content-overrides.json` in [accrue-rl/accrue-rl.github.io](https://github.com/accrue-rl/accrue-rl.github.io). The original <https://changyeon.site/accrue/> path redirects to the new site; the local <http://localhost:8000/accrue/> preview also redirects there. The project files were originally imported from [csmile-1006/accrue_webpage](https://github.com/csmile-1006/accrue_webpage) at `09ce10b929b82e368365c5798c7697a5546589ad`. Existing media and PDFs remain available under `accrue/assets/` to preserve their URLs. The homepage and full publication list link to the new project site.
 
 Create a folder such as `new-project/` containing `index.html` and its media. It is immediately available at `http://localhost:8000/new-project/`; no router, registration, build, or new dependency is needed. Keep each project's images/videos inside its own folder and use relative URLs.
 
