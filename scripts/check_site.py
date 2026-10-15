@@ -135,7 +135,7 @@ for name in ("papers", "others"):
         assert item, f"publication missing: {key}"
         title = re.search(r"\btitle\s*=\s*\{((?:[^{}]|\{[^{}]*\})*)\}", entry)
         assert title and normalized(title[1]) == normalized("".join(item["title"])), f"title mismatch: {key}"
-        for field, value in re.findall(r"\b(arxiv|pdf|html|code|website|url)\s*=\s*\{([^{}]*)\}", entry):
+        for field, value in re.findall(r"\b(arxiv|pdf|html|code|website|social|url)\s*=\s*\{([^{}]*)\}", entry):
             value = f"https://arxiv.org/abs/{value}" if field == "arxiv" else value
             assert link_key(publication_page.path, value) in item["links"], f"{key}: missing {field} link"
 assert keys and keys == publication_page.publications.keys(), "publication/BibTeX entries differ"
